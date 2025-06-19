@@ -8,8 +8,6 @@ services:
       - "8686:8686"
     volumes:
       - ./providers.conf:/app/providers.conf
-    env_file:
-      - .env
     restart: unless-stopped
     logging:
       driver: json-file
