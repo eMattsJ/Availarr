@@ -1,0 +1,4 @@
+{
+  "secret_key": "your-secret-key-here",
+  "webhook_url": "https://your-discord-or-api-endpoint.com"
+}
