@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Availarr Config</title>
+    <style>
+        body {
+            background-color: #aed6f1;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            width: 500px;
+        }
+        h2 {
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+        input[type="text"] {
+            width: 75%;
+            padding: 10px;
+            margin-right: 10px;
+            box-sizing: border-box;
+        }
+        .test-btn {
+            padding: 10px 15px;
+            cursor: pointer;
+        }
+        .form-group {
+            display: flex;
+            align-items: center;
+        }
+        .message {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        button.save {
+            width: 100%;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        .status {
+            margin-left: 10px;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        .pass {
+            color: green;
+        }
+        .fail {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h2>Availarr Configuration</h2>
+    <div class="form-group">
+        <input type="text" id="tmdb" placeholder="TMDB API Key">
+        <button class="test-btn" onclick="testTMDB()">Test</button>
+        <span id="status-tmdb" class="status"></span>
+    </div>
+    <div class="form-group">
+        <input type="text" id="overseerrUrl" placeholder="Overseerr URL">
+        <button class="test-btn" onclick="testOverseerrURL()">Test</button>
+        <span id="status-url" class="status"></span>
+    </div>
+    <div class="form-group">
+        <input type="text" id="overseerrKey" placeholder="Overseerr API Key">
+        <button class="test-btn" onclick="testOverseerrKey()">Test</button>
+        <span id="status-key" class="status"></span>
+    </div>
+    <div class="form-group">
+        <input type="text" id="discord" placeholder="Discord Webhook URL">
+        <button class="test-btn" onclick="testDiscord()">Test</button>
+        <span id="status-discord" class="status"></span>
+    </div>
+    <button class="save" onclick="saveConfig()">Save Configuration</button>
+    <div class="message" id="message"></div>
+</div>
+
+<script>
+    function setStatus(id, success) {
+        const el = document.getElementById(id);
+        el.textContent = success ? "✅" : "❌";
+        el.className = "status " + (success ? "pass" : "fail");
+    }
+
+    async function saveConfig() {
+        const data = {
+            TMDB_API_KEY: document.getElementById("tmdb").value,
+            OVERSEERR_URL: document.getElementById("overseerrUrl").value,
+            OVERSEERR_API_KEY: document.getElementById("overseerrKey").value,
+            DISCORD_WEBHOOK_URL: document.getElementById("discord").value
+        };
+        const res = await fetch("/config", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(data)
+        });
+        document.getElementById("message").innerText = (await res.json()).message || "Saved!";
+    }
+
+    async function testTMDB() {
+        const key = document.getElementById("tmdb").value;
+        if (!key) return setStatus("status-tmdb", false);
+        const res = await fetch(`/config/test/tmdb?key=${encodeURIComponent(key)}`);
+        const json = await res.json();
+        setStatus("status-tmdb", json.success);
+    }
+
+    async function testOverseerrURL() {
+        const url = document.getElementById("overseerrUrl").value;
+        if (!url) return setStatus("status-url", false);
+        const res = await fetch(`/config/test/overseerr?url=${encodeURIComponent(url)}`);
+        const json = await res.json();
+        setStatus("status-url", json.success);
+    }
+
+    async function testOverseerrKey() {
+        const key = document.getElementById("overseerrKey").value;
+        const url = document.getElementById("overseerrUrl").value;
+        if (!key || !url) return setStatus("status-key", false);
+        const res = await fetch(`/config/test/overseerr?url=${encodeURIComponent(url)}&key=${encodeURIComponent(key)}`);
+        const json = await res.json();
+        setStatus("status-key", json.success);
+    }
+
+    async function testDiscord() {
+        const url = document.getElementById("discord").value;
+        if (!url) return setStatus("status-discord", false);
+        const res = await fetch(`/config/test/discord?url=${encodeURIComponent(url)}`);
+        const json = await res.json();
+        setStatus("status-discord", json.success);
+    }
+</script>
+</body>
+</html>

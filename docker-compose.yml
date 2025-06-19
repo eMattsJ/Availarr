@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  availarr:
+    container_name: availarr
+    image: ematts/availarr:latest
+    ports:
+      - "8686:8686"
+    volumes:
+      - ./providers.conf:/app/providers.conf
+    env_file:
+      - .env
+    restart: unless-stopped
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
