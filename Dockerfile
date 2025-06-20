@@ -7,13 +7,16 @@ WORKDIR /app
 COPY . /app
 COPY app/static /app/static
 
-# Install dependencies
-RUN pip install --no-cache-dir -r requirements.txt
-RUN apt-get update && apt-get install -y curl && rm -rf /var/lib/apt/lists/*
-RUN pip install --upgrade setuptools
-RUN pip install --no-cache-dir setuptools==68.2.2
+# Update system packages and install dependencies
+RUN apt-get update && apt-get upgrade -y && apt-get install -y curl && rm -rf /var/lib/apt/lists/*
 
-# Set PYTHONPATH (optional but helpful)
+# Upgrade pip and setuptools to latest secure versions
+RUN pip install --no-cache-dir --upgrade pip setuptools
+
+# Install Python dependencies from requirements.txt
+RUN pip install --no-cache-dir --upgrade -r requirements.txt
+
+# Set PYTHONPATH
 ENV PYTHONPATH=/app
 
 # Expose FastAPI port
