@@ -28,3 +28,6 @@ build/
 # macOS / Windows system files
 .DS_Store
 Thumbs.db
+
+# Local testing
+docker-compose.local.yml

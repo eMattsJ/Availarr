@@ -3,7 +3,7 @@ import json
 import requests
 from fastapi import APIRouter, HTTPException, Query
 from pydantic import BaseModel
-from utils.logging import log_event
+from app.utils.logging import log_event
 
 CONFIG_FILE = "config.json"
 router = APIRouter()
@@ -13,6 +13,7 @@ class EnvConfig(BaseModel):
     OVERSEERR_URL: str
     OVERSEERR_API_KEY: str
     DISCORD_WEBHOOK_URL: str
+    PROVIDERS: list[str] = []
 
 def load_config():
     if not os.path.exists(CONFIG_FILE) or os.path.isdir(CONFIG_FILE):

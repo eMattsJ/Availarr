@@ -1,8 +1,7 @@
-import os
 import logging
 import requests
 from fastapi import APIRouter, Request
-from app.config_server import load_config  # Use web-based config
+from app.config_server import load_config
 from app.utils.normalization import normalize_provider
 from app.utils.logging import log_event
 
@@ -15,19 +14,6 @@ def get_required_config():
     if missing:
         raise EnvironmentError(f"Missing required config values: {', '.join(missing)}")
     return config
-
-def load_allowed_providers():
-    try:
-        with open("providers.conf", "r") as f:
-            allowed = [
-                line.strip().strip('"').strip("'")
-                for line in f
-                if line.strip() and not line.strip().startswith("#")
-            ]
-            return allowed
-    except Exception as e:
-        log_event("providers_load_failed", error=str(e))
-        return []
 
 def get_streaming_providers(tmdb_id, media_type):
     config = get_required_config()
@@ -73,6 +59,17 @@ def decline_pending_request(request_id):
     except requests.RequestException as e:
         log_event("request_decline_failed", request_id=request_id, error=str(e))
 
+def approve_request(request_id):
+    config = get_required_config()
+    url = f"{config['OVERSEERR_URL']}/api/v1/request/{request_id}/approve"
+    headers = {"X-Api-Key": config['OVERSEERR_API_KEY']}
+    try:
+        response = requests.post(url, headers=headers, timeout=10)
+        response.raise_for_status()
+        log_event("request_approved", request_id=request_id)
+    except requests.RequestException as e:
+        log_event("request_approval_failed", request_id=request_id, error=str(e))
+
 def send_discord_notification(title, request_id, available_on, reason, action):
     config = get_required_config()
     content = (
@@ -89,19 +86,15 @@ def send_discord_notification(title, request_id, available_on, reason, action):
 
 def send_review_notification(title, request_id, reason):
     config = get_required_config()
-
     overseerr_url = config["OVERSEERR_URL"].rstrip("/")
     request_link = f"{overseerr_url}/requests/{request_id}"
-
     content = (
         f"⚠️ **Manual Review Needed**\n"
         f"**{title}** (Request ID: `{request_id}`) is awaiting manual approval.\n"
         f"⛔ **Reason:** {reason}\n"
         f"▶ [Open in Overseerr]({request_link})"
     )
-
     payload = {"content": content}
-
     try:
         response = requests.post(config['DISCORD_WEBHOOK_URL'], json=payload, timeout=10)
         response.raise_for_status()
@@ -109,12 +102,28 @@ def send_review_notification(title, request_id, reason):
     except requests.RequestException as e:
         log_event("review_notify_failed", request_id=request_id, error=str(e))
 
+def send_approval_notification(title, request_id):
+    config = get_required_config()
+    overseerr_url = config["OVERSEERR_URL"].rstrip("/")
+    request_link = f"{overseerr_url}/requests/{request_id}"
+    content = (
+        f"✅ **Auto-Approved Request**\n"
+        f"**{title}** (Request ID: `{request_id}`) has been automatically approved because it is **not available** on any of your selected streaming platforms.\n"
+        f"▶ [View in Overseerr]({request_link})"
+    )
+    payload = {"content": content}
+    try:
+        response = requests.post(config['DISCORD_WEBHOOK_URL'], json=payload, timeout=10)
+        response.raise_for_status()
+        log_event("approval_notify_success", request_id=request_id)
+    except requests.RequestException as e:
+        log_event("approval_notify_failed", request_id=request_id, error=str(e))
+
 @router.post("")
 async def handle_webhook(request: Request):
     try:
         payload = await request.json()
         log_event("webhook_received", payload=payload)
-        print("Received webhook payload:", payload)
 
         event_type = payload.get("event")
         media = payload.get("media", {})
@@ -136,7 +145,8 @@ async def handle_webhook(request: Request):
             return {"message": "Request not approved or pending. Ignored."}
 
         providers = get_streaming_providers(tmdb_id, media_type)
-        allowed_providers = load_allowed_providers()
+        config = load_config()
+        allowed_providers = config.get("PROVIDERS", [])
         normalized_allowed = [normalize_provider(p) for p in allowed_providers]
 
         matched = set()
@@ -165,9 +175,14 @@ async def handle_webhook(request: Request):
             send_discord_notification(title, request_id, sorted(matched), reason, action)
             return {"message": f"Request {request_id} {action} due to streaming availability."}
 
-        reason = "Title not found on any preferred provider. Awaiting manual approval."
-        send_review_notification(title, request_id, reason)
-        return {"message": f"No matching providers found. Notified for manual approval."}
+        if status == 2:
+            approve_request(request_id)
+            send_approval_notification(title, request_id)
+            return {"message": f"Request {request_id} auto-approved due to no matching providers."}
+        else:
+            reason = "Title not found on any preferred provider. Awaiting manual approval."
+            send_review_notification(title, request_id, reason)
+            return {"message": f"No matching providers found. Notified for manual approval."}
 
     except Exception as e:
         log_event("webhook_error", error=str(e))

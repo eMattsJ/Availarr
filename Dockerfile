@@ -5,6 +5,7 @@ WORKDIR /app
 
 # Copy all project files into container
 COPY . /app
+COPY app/static /app/static
 
 # Install dependencies
 RUN pip install --no-cache-dir -r requirements.txt

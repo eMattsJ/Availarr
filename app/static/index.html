@@ -1,150 +1,237 @@
+<!-- STATIC PROVIDER LIST VERSION -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Availarr Config</title>
-    <style>
-        body {
-            background-color: #aed6f1;
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-        .container {
-            background-color: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-            width: 500px;
-        }
-        h2 {
-            text-align: center;
-        }
-        label {
-            display: block;
-            margin-top: 15px;
-            font-weight: bold;
-        }
-        input[type="text"] {
-            width: 75%;
-            padding: 10px;
-            margin-right: 10px;
-            box-sizing: border-box;
-        }
-        .test-btn {
-            padding: 10px 15px;
-            cursor: pointer;
-        }
-        .form-group {
-            display: flex;
-            align-items: center;
-        }
-        .message {
-            margin-top: 10px;
-            font-weight: bold;
-        }
-        button.save {
-            width: 100%;
-            padding: 10px;
-            margin-top: 20px;
-        }
-        .status {
-            margin-left: 10px;
-            font-weight: bold;
-            font-size: 1.2em;
-        }
-        .pass {
-            color: green;
-        }
-        .fail {
-            color: red;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>Availarr Config</title>
+  <style>
+    body {
+      background-color: #aed6f1;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .container {
+      background-color: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+      width: 95%;
+      max-width: 1100px;
+      overflow-y: auto;
+      max-height: 90vh;
+    }
+    h2 {
+      text-align: center;
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    input[type="text"] {
+      width: 100%;
+      padding: 15px;
+      font-size: 1rem;
+      margin: 5px 0;
+      box-sizing: border-box;
+    }
+    .test-btn {
+      padding: 10px 15px;
+      cursor: pointer;
+    }
+    .form-group {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .message {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+    button.save {
+      width: 100%;
+      padding: 10px;
+      margin-top: 20px;
+    }
+    .status {
+      margin-left: 10px;
+      font-weight: bold;
+      font-size: 1.2em;
+    }
+    .pass {
+      color: green;
+    }
+    .fail {
+      color: red;
+    }
+    .checkboxes {
+      margin-top: 20px;
+      max-height: 200px;
+      overflow-y: scroll;
+      border: 1px solid #ccc;
+      padding: 10px;
+    }
+    .checkboxes label {
+      display: inline-block;
+      margin-right: 15px;
+      margin-bottom: 10px;
+      width: 45%;
+    }
+    #providerSearch {
+      width: 100%;
+      padding: 10px;
+      font-size: 1rem;
+      margin: 10px 0;
+      box-sizing: border-box;
+    }
+  </style>
 </head>
 <body>
 <div class="container">
-    <h2>Availarr Configuration</h2>
-    <div class="form-group">
-        <input type="text" id="tmdb" placeholder="TMDB API Key">
-        <button class="test-btn" onclick="testTMDB()">Test</button>
-        <span id="status-tmdb" class="status"></span>
-    </div>
-    <div class="form-group">
-        <input type="text" id="overseerrUrl" placeholder="Overseerr URL">
-        <button class="test-btn" onclick="testOverseerrURL()">Test</button>
-        <span id="status-url" class="status"></span>
-    </div>
-    <div class="form-group">
-        <input type="text" id="overseerrKey" placeholder="Overseerr API Key">
-        <button class="test-btn" onclick="testOverseerrKey()">Test</button>
-        <span id="status-key" class="status"></span>
-    </div>
-    <div class="form-group">
-        <input type="text" id="discord" placeholder="Discord Webhook URL">
-        <button class="test-btn" onclick="testDiscord()">Test</button>
-        <span id="status-discord" class="status"></span>
-    </div>
-    <button class="save" onclick="saveConfig()">Save Configuration</button>
-    <div class="message" id="message"></div>
+  <h2>Availarr Configuration</h2>
+  <div class="form-group">
+    <input type="text" id="tmdb" placeholder="TMDB API Key">
+    <button class="test-btn" onclick="testTMDB()">Test</button>
+    <span id="status-tmdb" class="status"></span>
+  </div>
+  <div class="form-group">
+    <input type="text" id="overseerrUrl" placeholder="Overseerr URL">
+    <input type="text" id="overseerrKey" placeholder="Overseerr API Key">
+    <button class="test-btn" onclick="testOverseerr()">Test</button>
+    <span id="status-url" class="status"></span>
+    <span id="status-key" class="status"></span>
+  </div>
+  <div class="form-group">
+    <input type="text" id="discord" placeholder="Discord Webhook URL">
+    <button class="test-btn" onclick="testDiscord()">Test</button>
+    <span id="status-discord" class="status"></span>
+  </div>
+
+  <input type="text" id="providerSearch" placeholder="Search providers..." oninput="filterProviders()">
+  <div class="checkboxes" id="providerCheckboxes"></div>
+
+  <button class="save" onclick="saveConfig()">Save Configuration</button>
+  <div class="message" id="message"></div>
 </div>
 
 <script>
-    function setStatus(id, success) {
-        const el = document.getElementById(id);
-        el.textContent = success ? "✅" : "❌";
-        el.className = "status " + (success ? "pass" : "fail");
-    }
+  let selectedProviders = [];
+  let allProviders = [];
 
-    async function saveConfig() {
-        const data = {
-            TMDB_API_KEY: document.getElementById("tmdb").value,
-            OVERSEERR_URL: document.getElementById("overseerrUrl").value,
-            OVERSEERR_API_KEY: document.getElementById("overseerrKey").value,
-            DISCORD_WEBHOOK_URL: document.getElementById("discord").value
-        };
-        const res = await fetch("/config", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify(data)
-        });
-        document.getElementById("message").innerText = (await res.json()).message || "Saved!";
+  function toggleProvider(name) {
+    if (selectedProviders.includes(name)) {
+      selectedProviders = selectedProviders.filter(p => p !== name);
+    } else {
+      selectedProviders.push(name);
     }
+  }
 
-    async function testTMDB() {
-        const key = document.getElementById("tmdb").value;
-        if (!key) return setStatus("status-tmdb", false);
-        const res = await fetch(`/config/test/tmdb?key=${encodeURIComponent(key)}`);
-        const json = await res.json();
-        setStatus("status-tmdb", json.success);
-    }
+  function renderProviders(filter = "") {
+    const container = document.getElementById("providerCheckboxes");
+    container.innerHTML = "";
+    allProviders
+      .filter(p => p.toLowerCase().includes(filter.toLowerCase()))
+      .forEach(name => {
+        const isChecked = selectedProviders.includes(name);
+        const label = document.createElement("label");
+        label.innerHTML = `<input type="checkbox" value="${name}" ${isChecked ? "checked" : ""} onchange="toggleProvider('${name}')"> ${name}`;
+        container.appendChild(label);
+      });
+  }
 
-    async function testOverseerrURL() {
-        const url = document.getElementById("overseerrUrl").value;
-        if (!url) return setStatus("status-url", false);
-        const res = await fetch(`/config/test/overseerr?url=${encodeURIComponent(url)}`);
-        const json = await res.json();
-        setStatus("status-url", json.success);
-    }
+  function filterProviders() {
+    const filter = document.getElementById("providerSearch").value;
+    renderProviders(filter);
+  }
 
-    async function testOverseerrKey() {
-        const key = document.getElementById("overseerrKey").value;
-        const url = document.getElementById("overseerrUrl").value;
-        if (!key || !url) return setStatus("status-key", false);
-        const res = await fetch(`/config/test/overseerr?url=${encodeURIComponent(url)}&key=${encodeURIComponent(key)}`);
-        const json = await res.json();
-        setStatus("status-key", json.success);
+  async function loadProviderList() {
+    try {
+      const res = await fetch("/providers.json");
+      allProviders = await res.json();
+      renderProviders();
+    } catch (err) {
+      console.error("Failed to load provider list:", err);
     }
+  }
 
-    async function testDiscord() {
-        const url = document.getElementById("discord").value;
-        if (!url) return setStatus("status-discord", false);
-        const res = await fetch(`/config/test/discord?url=${encodeURIComponent(url)}`);
-        const json = await res.json();
-        setStatus("status-discord", json.success);
+  function loadConfig() {
+    fetch("/config")
+      .then(res => res.json())
+      .then(data => {
+        document.getElementById("tmdb").value = data.TMDB_API_KEY || "";
+        document.getElementById("overseerrUrl").value = data.OVERSEERR_URL || "";
+        document.getElementById("overseerrKey").value = data.OVERSEERR_API_KEY || "";
+        document.getElementById("discord").value = data.DISCORD_WEBHOOK_URL || "";
+        selectedProviders = data.PROVIDERS || [];
+        renderProviders();
+      })
+      .catch(err => console.error("Failed to load config:", err));
+  }
+
+  async function saveConfig() {
+    const cfg = {
+      TMDB_API_KEY: document.getElementById("tmdb").value,
+      OVERSEERR_URL: document.getElementById("overseerrUrl").value,
+      OVERSEERR_API_KEY: document.getElementById("overseerrKey").value,
+      DISCORD_WEBHOOK_URL: document.getElementById("discord").value,
+      PROVIDERS: selectedProviders
+    };
+
+    try {
+      const res = await fetch("/config", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(cfg)
+      });
+      const data = await res.json();
+      document.getElementById("message").textContent = data.message || "Configuration saved.";
+    } catch (err) {
+      console.error("Failed to save config:", err);
+      document.getElementById("message").textContent = "Failed to save configuration.";
     }
+  }
+
+  async function testTMDB() {
+    const key = document.getElementById("tmdb").value;
+    const res = await fetch(`/config/test/tmdb?key=${encodeURIComponent(key)}`);
+    const status = document.getElementById("status-tmdb");
+    const data = await res.json();
+    status.textContent = data.success ? "✅" : "❌";
+    status.className = data.success ? "status pass" : "status fail";
+  }
+
+  async function testOverseerr() {
+    const url = document.getElementById("overseerrUrl").value;
+    const key = document.getElementById("overseerrKey").value;
+    const statusUrl = document.getElementById("status-url");
+    const statusKey = document.getElementById("status-key");
+    const res = await fetch(`/config/test/overseerr?url=${encodeURIComponent(url)}&key=${encodeURIComponent(key)}`);
+    const data = await res.json();
+    const statusClass = data.success ? "status pass" : "status fail";
+    const icon = data.success ? "✅" : "❌";
+    statusUrl.textContent = icon;
+    statusUrl.className = statusClass;
+    statusKey.textContent = icon;
+    statusKey.className = statusClass;
+  }
+
+  async function testDiscord() {
+    const url = document.getElementById("discord").value;
+    const res = await fetch(`/config/test/discord?url=${encodeURIComponent(url)}`);
+    const status = document.getElementById("status-discord");
+    const data = await res.json();
+    status.textContent = data.success ? "✅" : "❌";
+    status.className = data.success ? "status pass" : "status fail";
+  }
+
+  window.addEventListener("DOMContentLoaded", () => {
+    loadProviderList();
+    loadConfig();
+  });
 </script>
 </body>
 </html>
