@@ -162,9 +162,69 @@ Docker Hub: [https://hub.docker.com/r/ematts/availarr](https://hub.docker.com/r/
 
 ## 📝 Changelog Summary
 
-## 📓 Changelog
+📝 Changelog Summary
+Frontend & UI
+🚀 Replaced JavaScript-based login error handling with server-rendered {% if error %} block in login.html
 
-See [CHANGELOG.md](./CHANGELOG.md) for full release history.
+✅ Added password mismatch validation message in change_password.html
+
+🌗 Implemented fully responsive dark mode toggle and styled header in index.html
+
+🖼️ Resolved logo and static asset loading issues by ensuring correct static file paths
+
+Backend (FastAPI)
+🔐 Updated main.py to use TemplateResponse for login and index rendering
+
+✅ Fixed session-based login flow:
+
+Redirects on first login to /change-password
+
+Logs out users post-password update
+
+🧠 Ensured config values persist using CONFIG_PATH volume (/config)
+
+✅ Validated and securely hashed credentials before saving
+
+🔍 Added detailed logging for all route registration and authentication events
+
+🧪 Verified and logged TMDb / Overseerr / Discord test route results
+
+Webhook & Config Logic
+🎯 Improved webhook handling:
+
+Auto-approves if not found on any provider
+
+Declines or deletes if found on allowed providers
+
+📡 Normalized provider name matching for accuracy (e.g., Paramount+, with ads)
+
+📥 Enhanced load_config() with robust fallback and default initialization
+
+🛡️ Centralized get_required_config() for validating API keys and URLs
+
+🔔 Improved Discord notifications:
+
+Custom messages for approve/decline/manual review events
+
+Docker & Deployment
+🐳 Dockerfile optimized:
+
+Removed duplicate COPY commands
+
+Ensured correct working directory and static files path
+
+Declared required ports and dependencies
+
+✅ Volume-mapped /config for persistent storage of config.json and .session_secret
+
+Security & Session Handling
+🔑 SessionMiddleware added with secure secret generation and 1-hour expiration
+
+🧼 Session cleared after logout or password change
+
+👮 Custom auth dependency verify_session applied to all /api routes
+
+
 
 
 ---
