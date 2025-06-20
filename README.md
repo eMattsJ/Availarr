@@ -1,5 +1,4 @@
-![Docker Pulls](https://img.shields.io/docker/pulls/ematts/availarr)
-![GitHub last commit](https://img.shields.io/github/last-commit/emattsJ/availarr)
+![Docker Pulls](https://img.shields.io/docker/pulls/ematts/availarr) ![GitHub last commit](https://img.shields.io/github/last-commit/emattsJ/availarr) <img src="https://github.com/user-attachments/assets/caec3275-6d80-4823-8ffc-bdbb5d49504a" alt="availarr logo" width="100" style="vertical-align: middle; margin-left: 12px;"/>
 
 # 🤖 Availarr: The Ultimate Streaming Request Gatekeeper
 
@@ -23,6 +22,8 @@ Availarr is a webhook-based automation service that checks whether requested med
 
 ### 1. 🚀 Prerequisites
 
+> ⚠️ **Overseerr Auto-Approve MUST BE DISABLED** — this is required for Availarr to function correctly.
+
 You'll need the following:
 
 * ✨ **TMDb API Key**
@@ -33,8 +34,6 @@ You'll need the following:
 
 * 🧡 **Discord Webhook URL**
   From Discord > Edit Channel > Integrations > Webhooks
-
-* ⚠️ **Overseerr Auto-Approve MUST BE DISABLED**
 
 ---
 
@@ -70,7 +69,7 @@ volumes:
   availarr_config:
 ```
 
-Then deploy:
+Deploy the container using the following commands:
 
 ```bash
 docker-compose pull
@@ -87,7 +86,7 @@ On your **first visit**, log in using the default credentials:
 
 ```
 Username: admin
-Password: 123456
+Password: 123456 *(temporary default — please change immediately after login)*
 ```
 
 You will then be prompted to create your **own username and password** to secure the interface.
@@ -144,14 +143,6 @@ flowchart TD
 
 ---
 
-## ✨ Contributing
-
-Pull requests welcome! Roadmap includes:
-
-* Real-time health panel
-
----
-
 ## 🚩 Final Notes
 
 > ⚠️ **If you do not disable Overseerr Auto-Approve**, this app **will not function properly**.
@@ -164,3 +155,31 @@ Availarr was built to give control back to media server admins and avoid wasting
 
 **@emattsJ**
 Docker Hub: [https://hub.docker.com/r/ematts/availarr](https://hub.docker.com/r/ematts/availarr)
+
+---
+
+## 📝 Changelog Summary
+
+### New Features
+
+* 🔐 **Secure login flow** introduced:
+
+  * First-time login uses default credentials: `admin` / `123456`
+  * Prompted to create your own username and password immediately
+
+### Enhancements
+
+* 📘 **README improvements**:
+
+  * 🔸 Emphasized Overseerr Auto-Approve requirement at the top of prerequisites
+  * 🔸 Clarified Docker deployment instructions
+  * 🔸 Added a security reminder to change the default login credentials
+  * 🖼️ Embedded and resized a logo for better visual balance
+
+### Fixes
+
+* ✅ Reorganized content for readability and emphasis
+
+---
+
+**Reminder:** Be sure to pull the latest container and test the updated login flow. If upgrading from a previous version, remove any old `config.json` if login issues occur.
