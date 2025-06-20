@@ -166,7 +166,7 @@ Docker Hub: [https://hub.docker.com/r/ematts/availarr](https://hub.docker.com/r/
 
 * 🔐 **Secure login flow** introduced:
 
-  * First-time login uses default credentials: `admin` / `123456`
+  * First-time login uses default credentials: `admin` / `admin`
   * Prompted to create your own username and password immediately
 
 ### Enhancements
