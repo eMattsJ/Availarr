@@ -49,14 +49,26 @@ services:
   availarr:
     container_name: availarr
     image: ematts/availarr:latest
+
     ports:
       - "8686:8686"
     restart: unless-stopped
+
+    environment:
+      - TZ=America/Chicago
+
+    volumes:
+      - availarr_config:/config
+
     logging:
       driver: json-file
       options:
         max-size: "10m"
         max-file: "3"
+
+volumes:
+  availarr_config:
+
 ```
 
 Then deploy:
