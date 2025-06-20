@@ -10,6 +10,7 @@ COPY app/static /app/static
 # Install dependencies
 RUN pip install --no-cache-dir -r requirements.txt
 RUN apt-get update && apt-get install -y curl && rm -rf /var/lib/apt/lists/*
+RUN pip install --upgrade setuptools
 
 # Set PYTHONPATH (optional but helpful)
 ENV PYTHONPATH=/app
