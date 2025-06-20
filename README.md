@@ -88,7 +88,7 @@ On your **first visit**, log in using the default credentials:
 
 ```
 Username: admin
-Password: 123456 *(temporary default — please change immediately after login)*
+Password: admin *(temporary default — please change immediately after login)*
 ```
 
 You will then be prompted to create your **own username and password** to secure the interface.
