@@ -103,15 +103,22 @@ function filterProviders() {
 
 async function loadProviderList() {
   try {
-    const res = await fetch("/providers.json");
-    allProviders = await res.json();
+    const res = await fetch("/static/providers.json");
+    if (!res.ok) throw new Error(`HTTP ${res.status} - ${res.statusText}`);
+
+    const json = await res.json();
+    if (!Array.isArray(json)) throw new Error("Provider data is not an array");
+
+    allProviders = json;
     const savedOrder = localStorage.getItem("sortOrder");
     if (savedOrder) sortOrder = JSON.parse(savedOrder);
     renderProviders();
   } catch (err) {
     console.error("Failed to load provider list:", err);
+    allProviders = [];  // fallback to empty to prevent .filter error
   }
 }
+
 
 function loadConfig() {
   fetch("/config")

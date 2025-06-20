@@ -1,5 +1,6 @@
 import os
 import json
+import hashlib
 import requests
 from fastapi import APIRouter, HTTPException, Query
 from pydantic import BaseModel
@@ -10,6 +11,20 @@ CONFIG_FILE = os.getenv("CONFIG_PATH", "/config/config.json")
 
 router = APIRouter()
 
+def hash_value(value: str) -> str:
+    return hashlib.sha256(value.encode()).hexdigest()
+
+DEFAULT_CONFIG = {
+    "username": "admin",
+    "password": hash_value("123456"),
+    "require_password_change": True,
+    "TMDB_API_KEY": "",
+    "OVERSEERR_URL": "",
+    "OVERSEERR_API_KEY": "",
+    "DISCORD_WEBHOOK_URL": "",
+    "providers": []
+}
+
 class EnvConfig(BaseModel):
     TMDB_API_KEY: str
     OVERSEERR_URL: str
@@ -18,8 +33,16 @@ class EnvConfig(BaseModel):
     PROVIDERS: list[str] = []
 
 def load_config():
+    # Ensure directory exists for first-time deployment
+    config_dir = os.path.dirname(CONFIG_FILE)
+    if not os.path.exists(config_dir):
+        os.makedirs(config_dir, exist_ok=True)
+
     if not os.path.exists(CONFIG_FILE) or os.path.isdir(CONFIG_FILE):
-        return {}
+        with open(CONFIG_FILE, "w") as f:
+            json.dump(DEFAULT_CONFIG, f, indent=2)
+        return DEFAULT_CONFIG
+
     try:
         with open(CONFIG_FILE, "r") as f:
             return json.load(f)
@@ -29,6 +52,9 @@ def load_config():
 
 def save_config(cfg: dict):
     try:
+        if "password" in cfg:
+            cfg["password"] = hash_value(cfg["password"])
+
         with open(CONFIG_FILE, "w") as f:
             json.dump(cfg, f, indent=2)
     except Exception as e:
@@ -43,7 +69,9 @@ def get_config():
 
 @router.post("")
 def update_config(cfg: EnvConfig):
-    save_config(cfg.dict())
+    config = load_config()
+    config.update(cfg.dict())
+    save_config(config)
     log_event("config_updated", updated_keys=list(cfg.dict().keys()))
     return {"message": "Configuration updated successfully"}
 

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="static/favicon.ico" type="image/x-icon">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Availarr Config</title>
@@ -12,8 +12,8 @@
     }
   </script>
   <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.0/Sortable.min.js"></script>
-  <script src="/js/main.js" defer></script>
-  <style>
+  <script src="/static/js/main.js" defer></script>
+ <style>
     .logo-card:hover {
       transform: scale(1.05);
       transition: transform 0.2s ease;
@@ -58,12 +58,42 @@
     }
   </style>
 </head>
+<script>
+  function obfuscate(value) {
+    if (!value || value.length <= 4) return '*'.repeat(8);
+    return '*'.repeat(value.length - 4) + value.slice(-4);
+  }
+
+  async function loadConfigObfuscated() {
+    try {
+      const res = await fetch('/config');
+      const config = await res.json();
+
+      if (config.TMDB_API_KEY) {
+        document.getElementById('tmdb').value = obfuscate(config.TMDB_API_KEY);
+      }
+      if (config.OVERSEERR_API_KEY) {
+        document.getElementById('overseerrKey').value = obfuscate(config.OVERSEERR_API_KEY);
+      }
+      if (config.DISCORD_WEBHOOK_URL) {
+        document.getElementById('discord').value = obfuscate(config.DISCORD_WEBHOOK_URL);
+      }
+      if (config.OVERSEERR_URL) {
+        document.getElementById('overseerrUrl').value = config.OVERSEERR_URL;
+      }
+    } catch (err) {
+      console.error('Failed to load or obfuscate config:', err);
+    }
+  }
+
+  window.addEventListener('DOMContentLoaded', loadConfigObfuscated);
+</script>
 <body class="transition-colors duration-300 bg-gray-100 text-gray-900 dark:bg-gray-800 dark:text-white">
   <div class="container mx-auto max-w-5xl p-6 bg-white dark:bg-gray-900 text-gray-900 dark:text-white rounded-xl shadow">
     <div class="flex flex-col sm:flex-row justify-between items-center mb-6 gap-4 sm:gap-0">
       <!-- Grouped Logo and Title -->
       <div class="flex items-center gap-4">
-        <img src="availarr.png" alt="Availarr Logo" class="h-16 w-auto max-w-[150px] object-contain">
+        <img src="static/availarr.png" alt="Availarr Logo" class="h-16 w-auto max-w-[150px] object-contain">
         <h1 class="text-3xl font-bold text-center sm:text-left">Availarr Configuration</h1>
       </div>
       <!-- Theme Toggle Switch -->
