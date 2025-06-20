@@ -1,328 +1,1306 @@
 [
-  "Netflix",
-  "Disney Plus",
-  "Amazon Prime Video",
-  "Apple TV+",
-  "Hulu",
-  "Paramount Plus",
-  "Max",
-  "Peacock Premium",
-  "Apple TV",
-  "Amazon Video",
-  "A&E",
-  "A&E Crime Central Apple TV Channel",
-  "ABC",
-  "Acaciatv Amazon Channel",
-  "Acorn TV",
-  "Acorn TV Apple TV",
-  "AcornTV Amazon Channel",
-  "AD tv",
-  "Adult Swim",
-  "Adultswim Amazon Channel",
-  "aha",
-  "Alchemiya Amazon Channel",
-  "All warrior network Amazon Channel",
-  "ALLBLK",
-  "ALLBLK Amazon channel",
-  "ALLBLK Apple TV channel",
-  "Amazon Prime Video Free with Ads",
-  "Amazon Prime Video with Ads",
-  "AMC",
-  "AMC Plus Apple TV Channel",
-  "AMC+",
-  "AMC+ Amazon Channel",
-  "AMC+ Roku Premium Channel",
-  "Amebatv Amazon Channel",
-  "Angel Studios",
-  "Animal Planet",
-  "Apple TV Plus Amazon Channel",
-  "ARROW",
-  "AsianCrush",
-  "Aspire TV Amazon Channel",
-  "Baeble Amazon Channel",
-  "BBC America",
-  "BBC Select Apple Tv channel",
-  "BeFit Amazon Channel",
-  "Best of British Tv Amazon Channel",
-  "Best tv ever Amazon Channel",
-  "Best Westerns Ever Amazon Channel",
-  "Bet+",
-  "BET+  Apple TV channel",
-  "Bet+ Amazon Channel",
-  "BFI Player Amazon Channel",
-  "BongFlix Amazon Channel",
-  "BR Sports Amazon Channel",
-  "Bravo TV",
-  "BritBox",
-  "BritBox Amazon Channel",
-  "Britbox Apple TV Channel",
-  "Broadway HD Amazon Channel",
-  "BroadwayHD",
-  "Brown Sugar Amazon Channel",
-  "BYUtv",
-  "Carnegie Hall+ Amazon Channel",
-  "Carnegie Hall+ Apple TV Channel",
-  "Cartoon Network Amazon Channel",
-  "Chai Flicks",
-  "Cinefest Amazon Channel",
-  "Cinemax Amazon Channel",
-  "Cinemax Apple TV Channel",
-  "Cineverse",
-  "CNN Max Amazon Channel",
-  "Cocina ON Amazon Channel",
-  "Cohen Media Amazon Channel",
-  "Cranked Up TV",
-  "Criterion Channel",
-  "Crunchyroll",
-  "Crunchyroll Amazon Channel",
-  "Cultpix",
-  "Curiosity Stream",
-  "CuriosityStream Apple TV Channel",
-  "Daily Burn Amazon Channel",
-  "dAnime Amazon Channel",
-  "Daring Docs Amazon Channel",
-  "Darkroom",
-  "Dekkoo",
-  "Dekkoo Amazon Channel",
-  "Demand Africa Amazon Channel",
-  "Discovery",
-  "Discovery +",
-  "Discovery+ Amazon Channel",
-  "DisneyNOW",
-  "DistroTV",
-  "DocAlliance Films",
-  "DocCom Amazon Channel",
-  "DOCSVILLE",
-  "Docsville Amazon Channel",
-  "DocuramaFilms Amazon Channel",
-  "Doki Amazon Channel",
-  "Dove Amazon Channel",
-  "Dox Amazon Channel",
-  "Dreamscape Kids Amazon Channel",
-  "DreamWorksTV Amazon Channel",
-  "Echoboom Amazon Channel",
-  "Eros Now Select Apple TV Channel",
-  "ESPN",
-  "ESPN Plus",
-  "Eternal Family",
-  "Eventive",
-  "Fandango At Home",
-  "Fandango at Home Free",
-  "Fandor",
-  "Fandor Amazon Channel",
-  "Fawesome",
-  "Fear Factory Amazon Channel",
-  "FidoTV Channel Amazon Channel",
-  "Film Movement Plus",
-  "Film Movement Plus Amazon Channel",
-  "FilmBox Live Amazon Channel",
-  "FilmBox+",
-  "Filmzie",
-  "Fitfusion Amazon Channel",
-  "Flix Premiere",
-  "FlixFling",
-  "FlixHouse",
-  "Food Matters Amazon Channel",
-  "Food Network",
-  "FOUND TV",
-  "Fox",
-  "France Channel Amazon Channel",
-  "Freeform",
-  "fuboTV",
-  "FUEL TV+ Amazon Channel",
-  "Full Moon Amazon Channel",
-  "Fuse+ Amazon Channel",
-  "FXNow",
-  "FYI Network",
-  "Gaia Amazon Channel",
-  "Gaiam TV Yoga & Fit",
-  "GlewedTV",
-  "Google Play Movies",
-  "Great American Pure Flix Amazon Channel",
-  "Green Planet Stream Amazon Channel",
-  "GuideDoc",
-  "Hallmark+ Amazon Channel",
-  "Hallmark+ Apple TV Channel",
-  "Here TV",
-  "Here TV  Amazon Channel",
-  "HGTV",
-  "Hi-YAH",
-  "Hi-YAH Amazon Channel",
-  "HiDive",
-  "Hidive Amazon Channel",
-  "History",
-  "History Vault",
-  "HISTORY Vault Amazon Channel",
-  "HISTORY Vault Apple TV Channel",
-  "Hoichoi",
-  "Hoopla",
-  "Hopster Amazon Channel",
-  "IFC Films Unlimited Apple TV Channel",
-  "Indie Club Amazon Channel",
-  "IndieFlix",
-  "IndieFlix Shorts Amazon Channel",
-  "IndiePix Unlimited Amazon Channel",
-  "Investigation Discovery",
-  "iQIYI",
-  "Jolt Film",
-  "JustWatchTV",
-  "Kanopy",
-  "Kartoon Channel Amazon Channel",
-  "Kidstream Amazon Channel",
-  "Kino Film Collection",
-  "Klassiki",
-  "Kocowa",
-  "Kocowa Amazon Channel",
-  "Lifetime",
-  "Lifetime Movie Club",
-  "Lifetime Movie Club Amazon Channel",
-  "Lifetime Movie Club Apple TV Channel",
-  "Magellan TV",
-  "Mangolia Network Amazon Channel",
-  "Mangolia Selects Amazon Channel",
-  "Marquee TV Amazon Channel",
-  "Max  Originals Amazon Channel",
-  "Max Amazon Channel",
-  "Metrograph",
-  "MGM Plus",
-  "MGM Plus Roku Premium Channel",
-  "MGM+ Amazon Channel",
-  "Mhz Choice",
-  "Microsoft Store",
-  "Midnight Pulp",
-  "Midnight Pulp Amazon Channel",
-  "Monsters and Nightmares Amazon Channel",
-  "Motorvision TV Amazon Channel",
-  "MovieSaints",
-  "MovieSphere+ Amazon Channel",
-  "MTV Hits Amazon Channel",
-  "MUBI",
-  "MUBI Amazon Channel",
-  "myfilmfriend",
-  "MyOutdoor TV Amazon Channel",
-  "MyOutdoorTV",
-  "MZ Choice Amazon Channel",
-  "National Geographic",
-  "NBC",
-  "Netflix Kids",
-  "Netflix Standard with Ads",
-  "Night Flight Plus",
-  "Noggin Amazon Channel",
-  "OnDemandKorea",
-  "Outside TV Features Amzon Channel",
-  "Outside Watch",
-  "OUTtv Apple TV Channel",
-  "Ovation TV",
-  "OVID",
-  "OWN Amazon Channel",
-  "OXYGEN",
-  "Paramount Plus Apple TV Channel",
-  "Paramount+ Amazon Channel",
-  "Paramount+ MTV Amazon Channel",
-  "Paramount+ Originals Amazon Channel",
-  "Paramount+ Roku Premium Channel",
-  "Paramount+ with Showtime",
-  "Passionflix Amazon Channel",
-  "PBS",
-  "PBS America Amazon Channel",
-  "PBS Documentaries Amazon Channel",
-  "PBS Kids Amazon Channel",
-  "PBS Living Amazon Channel",
-  "PBS Masterpiece Amazon Channel",
-  "Peacock Premium Plus",
-  "Philo",
-  "Pinoy Box Office Amazon Channel",
-  "PixL Amazon Channel",
-  "Planet Earth Amazon Channel",
-  "Plex",
-  "Plex Channel",
-  "Pluto TV",
-  "Pongalo Amazon Channel",
-  "Popflick",
-  "Public Domain Movies",
-  "Pure Flix",
-  "Qello Concerts by Stingray Amazon Channel",
-  "Rakuten Viki",
-  "REELZ Amazon Channel",
-  "Retrocrush",
-  "RetroCrush Amazon Channel",
-  "Reveel",
-  "Revry",
-  "Revry Amazon Channel",
-  "Runtime",
-  "Ryan and Friends Plus Amazon Channel",
-  "Science Amazon Channel",
-  "Science Channel",
-  "Screambox",
-  "Screambox Amazon Channel",
-  "ScreenPix Apple TV Channel",
-  "Sensical Amazon Channel",
-  "Shahid VIP",
-  "ShortsTV Amazon Channel",
-  "Shout! Factory Amazon Channel",
-  "Shout! Factory TV",
-  "Shudder",
-  "Shudder Amazon Channel",
-  "Shudder Apple TV Channel",
-  "Spectrum On Demand",
-  "Starz",
-  "Starz Amazon Channel",
-  "Starz Apple TV Channel",
-  "Starz Roku Premium Channel",
-  "Stingray Classica Amazon Channel",
-  "Stingray Djazz Amazon Channel",
-  "Stingray Karaoke Amazon Channel",
-  "Strand Releasing Amazon Channel",
-  "Stupid Co",
-  "Sun Nxt",
-  "Sundance Now",
-  "Sundance Now Amazon Channel",
-  "Sundance Now Apple TV Channel",
-  "Takflix",
-  "Tastemade Amazon Channel",
-  "Tastemade Apple TV Channel",
-  "TBS",
-  "TCM",
-  "TCM Amazon Channel",
-  "The Coda Collection Amazon Channel",
-  "The CW",
-  "The Great Courses Amazon Channel",
-  "The Oprah Winfrey Network",
-  "The Roku Channel",
-  "The Surf Network Amazon Channel",
-  "TLC",
-  "TNT",
-  "Toku Amazon Channel",
-  "Toon Goggles",
-  "Travel Channel",
-  "Troma NOW",
-  "tru TV",
-  "True Royalty Amazon Channel",
-  "True Story",
-  "Tubi TV",
-  "Univer Video",
-  "UP Faith & Family Amazon Channel",
-  "UP Faith & Family Apple TV Channel",
-  "USA Network",
-  "Vemox Cine Amazon Channel",
-  "VH1",
-  "Viaplay Amazon Channel",
-  "Vice TV",
-  "VIX",
-  "Vix Gratis Amazon Channel",
-  "Warriors and Gangsters Amazon Channel",
-  "Watchit.Kid Amazon Channel",
-  "WeTV",
-  "WOW Presents Plus",
-  "WWE Network",
-  "Xive TV Documentaries Amazon Channel",
-  "XLTV Amazon Channel",
-  "Xumo Play",
-  "Yipee Kids TV Amazon Channel",
-  "Yoga and Fitness TV Amazon channel",
-  "YouTube",
-  "YouTube Free",
-  "YouTube Premium",
-  "Youtube TV",
-  "ZenLIFE by Stingray Amazon Channel"
+  {
+    "name": "Amazon Video",
+    "logo": "https://image.tmdb.org/t/p/original/seGSXajazLMCKGB5hnRCidtjay1.jpg"
+  },
+  {
+    "name": "Apple TV+",
+    "logo": "https://image.tmdb.org/t/p/original/2E03IAZsX4ZaUqM7tXlctEPMGWS.jpg"
+  },
+  {
+    "name": "Amazon Prime Video",
+    "logo": "https://image.tmdb.org/t/p/original/pvske1MyAoymrs5bguRfVqYiM9a.jpg"
+  },
+  {
+    "name": "Netflix",
+    "logo": "https://image.tmdb.org/t/p/original/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg"
+  },
+  {
+    "name": "Disney Plus",
+    "logo": "https://image.tmdb.org/t/p/original/97yvRBw1GzX7fXprcF80er19ot.jpg"
+  },
+  {
+    "name": "Apple TV",
+    "logo": "https://image.tmdb.org/t/p/original/9ghgSC0MA082EL6HLCW3GalykFD.jpg"
+  },
+  {
+    "name": "Hulu",
+    "logo": "https://image.tmdb.org/t/p/original/bxBlRPEPpMVDc4jMhSrTf2339DW.jpg"
+  },
+  {
+    "name": "A&E",
+    "logo": "https://image.tmdb.org/t/p/original/pA4qJFsD4lUFxJzwOE7U4FAxK7v.jpg"
+  },
+  {
+    "name": "A&E Crime Central Apple TV Channel",
+    "logo": "https://image.tmdb.org/t/p/original/a0vfnBfWPAF6OtKZCzlyiW9A9l6.jpg"
+  },
+  {
+    "name": "ABC",
+    "logo": "https://image.tmdb.org/t/p/original/aEp5AORtajnh2rc7O33ui8pj2um.jpg"
+  },
+  {
+    "name": "AD tv",
+    "logo": "https://image.tmdb.org/t/p/original/mK8nfCXfwoAa6cAkHUSKCkLEIKK.jpg"
+  },
+  {
+    "name": "ALLBLK",
+    "logo": "https://image.tmdb.org/t/p/original/4cKdiYEPW1BsWLb9UmNzAyUlD5p.jpg"
+  },
+  {
+    "name": "ALLBLK Amazon channel ",
+    "logo": "https://image.tmdb.org/t/p/original/dj9jb4fiaHILc5GtF76BXzrsGZj.jpg"
+  },
+  {
+    "name": "ALLBLK Apple TV channel",
+    "logo": "https://image.tmdb.org/t/p/original/voNwdFHk9uc2ZEWKZlwSQDsfRJN.jpg"
+  },
+  {
+    "name": "AMC",
+    "logo": "https://image.tmdb.org/t/p/original/92Kx25Od0habmgRBTqT6XWgwgKt.jpg"
+  },
+  {
+    "name": "AMC Plus Apple TV Channel ",
+    "logo": "https://image.tmdb.org/t/p/original/oTQdXIqM9iewlN4MC2nhKB0gHw.jpg"
+  },
+  {
+    "name": "AMC+",
+    "logo": "https://image.tmdb.org/t/p/original/ovmu6uot1XVvsemM2dDySXLiX57.jpg"
+  },
+  {
+    "name": "AMC+ Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/2ino0WmHA4GROB7NYKzT6PGqLcb.jpg"
+  },
+  {
+    "name": "AMC+ Roku Premium Channel",
+    "logo": "https://image.tmdb.org/t/p/original/gAGrSQCTAisxy2CsWbijVvJEnRo.jpg"
+  },
+  {
+    "name": "ARROW",
+    "logo": "https://image.tmdb.org/t/p/original/wAuMUrRTVaJ2CZ4ZpyQbayZx0iU.jpg"
+  },
+  {
+    "name": "Acaciatv Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/90uY3zG0NQzLvRlK6q2PhNggus5.jpg"
+  },
+  {
+    "name": "Acorn TV",
+    "logo": "https://image.tmdb.org/t/p/original/doCc555FPPgGtuaZJxf9QZVpIp5.jpg"
+  },
+  {
+    "name": "Acorn TV Apple TV",
+    "logo": "https://image.tmdb.org/t/p/original/kx8rGgFYxX6aJkG7RHx2mtijglC.jpg"
+  },
+  {
+    "name": "AcornTV Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/1wYmvbAuVZz2JnKvYfYN8Qolnb.jpg"
+  },
+  {
+    "name": "Adult Swim",
+    "logo": "https://image.tmdb.org/t/p/original/da2dkyeFe4GCRaKxpsW4mzt2UPl.jpg"
+  },
+  {
+    "name": "Adultswim Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/xLJyrRjQpP5xzWhXFCWlmHXnqTT.jpg"
+  },
+  {
+    "name": "Alchemiya Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/sRKgjbfea41FYrnLJ8fb3HxWHuW.jpg"
+  },
+  {
+    "name": "All warrior network Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/4FAHcgblW2K4bAQTOBgRjreSG5v.jpg"
+  },
+  {
+    "name": "Amazon Prime Video Free with Ads",
+    "logo": "https://image.tmdb.org/t/p/original/gZlCYHPx9a0TRUCEeTvHXBf9ibX.jpg"
+  },
+  {
+    "name": "Amazon Prime Video with Ads",
+    "logo": "https://image.tmdb.org/t/p/original/8aBqoNeGGr0oSA85iopgNZUOTOc.jpg"
+  },
+  {
+    "name": "Amebatv Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/o1MMI3qWdY78IWNSjqJz34db2sF.jpg"
+  },
+  {
+    "name": "Angel Studios",
+    "logo": "https://image.tmdb.org/t/p/original/znTpq1dy5TYxm1QLoxORzuOuwYq.jpg"
+  },
+  {
+    "name": "Animal Planet",
+    "logo": "https://image.tmdb.org/t/p/original/uW87WpK4Zfz4zCf224vvFhn3ZJc.jpg"
+  },
+  {
+    "name": "Apple TV Plus Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/yFrZVSC4UnDpeIzX2svcRPgV5P5.jpg"
+  },
+  {
+    "name": "AsianCrush",
+    "logo": "https://image.tmdb.org/t/p/original/jCgWMxqGaq0h0VOxyJPfQdTqmii.jpg"
+  },
+  {
+    "name": "Aspire TV Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/7ockkrlALB3USwd4SykWGXNOi2u.jpg"
+  },
+  {
+    "name": "BBC America",
+    "logo": "https://image.tmdb.org/t/p/original/jfXLhMzHHmBYrtE9ZaW7as2RA98.jpg"
+  },
+  {
+    "name": "BBC Select Apple Tv channel",
+    "logo": "https://image.tmdb.org/t/p/original/z9YY5laFTjAb28NHvMU3ZBjVftm.jpg"
+  },
+  {
+    "name": "BET+  Apple TV channel",
+    "logo": "https://image.tmdb.org/t/p/original/yFk3WffvGGUtIjJBSV0pgsciaEB.jpg"
+  },
+  {
+    "name": "BFI Player Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/4SJW6thrCvN6ya2hO6naksfRZDF.jpg"
+  },
+  {
+    "name": "BR Sports Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/rQqE6cbsY6BhDXKKcnv6vfGkHzW.jpg"
+  },
+  {
+    "name": "BYUtv",
+    "logo": "https://image.tmdb.org/t/p/original/9YYuvhTfMuBR7keJ7DPa1GFlDrF.jpg"
+  },
+  {
+    "name": "Baeble Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/oONBGuciYIr8QtZfK6DXEzyFla2.jpg"
+  },
+  {
+    "name": "BeFit Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/9L1RVS2dqMJAHfEWMZcWOsZuENc.jpg"
+  },
+  {
+    "name": "Best Westerns Ever Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/zHcxRKfqUFsdG3taPDYGEu5E8FK.jpg"
+  },
+  {
+    "name": "Best of British Tv Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/d4DhghomNx4W8eNZxiWBwYhTISn.jpg"
+  },
+  {
+    "name": "Best tv ever Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/u6PDINhuBPzFHB7aErSeDDkyoxW.jpg"
+  },
+  {
+    "name": "Bet+",
+    "logo": "https://image.tmdb.org/t/p/original/biHGb84xAzYrNkdvX5XWQTmgzC8.jpg"
+  },
+  {
+    "name": "Bet+ Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/2AvUqoIHAq2lLxRy2IxOBUgCYef.jpg"
+  },
+  {
+    "name": "BongFlix Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/ihAwBTPSlTBXje7VbTyDoGTPIfc.jpg"
+  },
+  {
+    "name": "Bravo TV",
+    "logo": "https://image.tmdb.org/t/p/original/uGOba5AB0URrJd5gelWGinaVR2h.jpg"
+  },
+  {
+    "name": "BritBox",
+    "logo": "https://image.tmdb.org/t/p/original/d2Kx5XtHcd0DBwVwIe7D3X7Sifp.jpg"
+  },
+  {
+    "name": "BritBox Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/tLBLABfFYYETf9Zk8gKEWnjhMai.jpg"
+  },
+  {
+    "name": "Britbox Apple TV Channel ",
+    "logo": "https://image.tmdb.org/t/p/original/xp12VXTZfunk568CAPs2Xqknimq.jpg"
+  },
+  {
+    "name": "Broadway HD Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/49xq9Js36idzOAbLPFLeKIaS8lz.jpg"
+  },
+  {
+    "name": "BroadwayHD",
+    "logo": "https://image.tmdb.org/t/p/original/6IYZ4NjwPikxN7J9cfSmuyeHeMm.jpg"
+  },
+  {
+    "name": "Brown Sugar Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/fAE2Y9TG1gkTB8xLAVm5WXIgjXw.jpg"
+  },
+  {
+    "name": "CNN Max Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/323sW69J4GH2pYy7stNb9EqawhA.jpg"
+  },
+  {
+    "name": "Carnegie Hall+ Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/xT5I4zZ2XTLhOVA5ooQIsqjSC3R.jpg"
+  },
+  {
+    "name": "Carnegie Hall+ Apple TV Channel",
+    "logo": "https://image.tmdb.org/t/p/original/dDHyeNrfnloy6skW0j6oIUXFa3Z.jpg"
+  },
+  {
+    "name": "Cartoon Network Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/c4vuFkR7wof2vIeVhvaoo550ccE.jpg"
+  },
+  {
+    "name": "Chai Flicks",
+    "logo": "https://image.tmdb.org/t/p/original/qesugDq8sUCixmOOsqDM1xAnBYz.jpg"
+  },
+  {
+    "name": "Cinefest Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/wT06lfmmMFl1qUPSvyf3AikQThf.jpg"
+  },
+  {
+    "name": "Cinemax Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/ohcwolMl8E743CkS8MnhmJKOlRj.jpg"
+  },
+  {
+    "name": "Cinemax Apple TV Channel",
+    "logo": "https://image.tmdb.org/t/p/original/zXCdY4pczONheFCU9GkrMbGI1o5.jpg"
+  },
+  {
+    "name": "Cineverse",
+    "logo": "https://image.tmdb.org/t/p/original/jpEV1w3CnrpDQ1vRvGQIZF1S6vA.jpg"
+  },
+  {
+    "name": "Cocina ON Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/r2WsboLyjoNW3WgABuYwuiTGZqq.jpg"
+  },
+  {
+    "name": "Cohen Media Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/QAtDmj6XHlkPvw5xAjF08ZQARh.jpg"
+  },
+  {
+    "name": "Cranked Up TV",
+    "logo": "https://image.tmdb.org/t/p/original/eP7469ZXfQDZnnLcCiHAeSPMbRI.jpg"
+  },
+  {
+    "name": "Criterion Channel",
+    "logo": "https://image.tmdb.org/t/p/original/yhrtzYd43pFIhRq0ruO8umJPuyn.jpg"
+  },
+  {
+    "name": "Crunchyroll",
+    "logo": "https://image.tmdb.org/t/p/original/fzN5Jok5Ig1eJ7gyNGoMhnLSCfh.jpg"
+  },
+  {
+    "name": "Crunchyroll Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/pgjz7bzfBq4nFDu8JJDLBoUVAX8.jpg"
+  },
+  {
+    "name": "Cultpix",
+    "logo": "https://image.tmdb.org/t/p/original/uauVx3dGWt0GICqdMCBYJObd3Mo.jpg"
+  },
+  {
+    "name": "Curiosity Stream",
+    "logo": "https://image.tmdb.org/t/p/original/oR1aNm1Qu9jQBkW4VrGPWhqbC3P.jpg"
+  },
+  {
+    "name": "CuriosityStream Apple TV Channel",
+    "logo": "https://image.tmdb.org/t/p/original/z9x1xFFKjHTYlLYWtiPhAjN4jOp.jpg"
+  },
+  {
+    "name": "DOCSVILLE",
+    "logo": "https://image.tmdb.org/t/p/original/5zqbck5mo8PuVbGu2ngBUdn5Yga.jpg"
+  },
+  {
+    "name": "Daily Burn Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/hYgltwhfvUOmhzn6cjsX1HaCT0P.jpg"
+  },
+  {
+    "name": "Daring Docs Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/sgWgoIcSqrFdRuteFcaYpd0iSOc.jpg"
+  },
+  {
+    "name": "Darkroom",
+    "logo": "https://image.tmdb.org/t/p/original/8G7qvHF7hdmXpfxxqtF1WT9ib68.jpg"
+  },
+  {
+    "name": "Dekkoo",
+    "logo": "https://image.tmdb.org/t/p/original/x6nRFzF32hCzMHaVM4RHRo7lsgS.jpg"
+  },
+  {
+    "name": "Dekkoo Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/3mJLdi3mdSJr934KkyX2N8ZQOth.jpg"
+  },
+  {
+    "name": "Demand Africa Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/tqHULphS5dyG0EjdAanhmHwTvlu.jpg"
+  },
+  {
+    "name": "Discovery",
+    "logo": "https://image.tmdb.org/t/p/original/w8uX5FHY01CmODT0QvGv5CBGbPS.jpg"
+  },
+  {
+    "name": "Discovery +",
+    "logo": "https://image.tmdb.org/t/p/original/eMTnWwNVtThkjvQA6zwxaoJG9NE.jpg"
+  },
+  {
+    "name": "Discovery+ Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/lgudHqEtTOzkMWlpTjU1oUyoUSZ.jpg"
+  },
+  {
+    "name": "DisneyNOW",
+    "logo": "https://image.tmdb.org/t/p/original/d8HzRaIa5aGE5mJB1SsIA9hODdx.jpg"
+  },
+  {
+    "name": "DistroTV",
+    "logo": "https://image.tmdb.org/t/p/original/6gdKp9OwHgDLloethSPxZbtovkl.jpg"
+  },
+  {
+    "name": "DocAlliance Films",
+    "logo": "https://image.tmdb.org/t/p/original/vbXJBJVv3u3YWt6ml0l0ldDblXT.jpg"
+  },
+  {
+    "name": "DocCom Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/bHNDIVZWeq3Aq7y8qAhm2p3tVtg.jpg"
+  },
+  {
+    "name": "Docsville Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/e2pHnkFWJYqqmTjkH5znFRJo0b3.jpg"
+  },
+  {
+    "name": "DocuramaFilms Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/7euDfXJ182rvLwRtZTjEhrEt0Z7.jpg"
+  },
+  {
+    "name": "Doki Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/texSqaKfG4RrEEa51GHZ1WaxBSn.jpg"
+  },
+  {
+    "name": "Dove Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/i9GZoDffI29FmE7Y2Bk6hI6i0uR.jpg"
+  },
+  {
+    "name": "Dox Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/3P8zPlNET0zhg3UwJAj1I3MaPP8.jpg"
+  },
+  {
+    "name": "DreamWorksTV Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/hDoYXuGJtGwpvgPjmgx4jQFil01.jpg"
+  },
+  {
+    "name": "Dreamscape Kids Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/5jMpPWSWLFBTVxHaaZByPOEoKn5.jpg"
+  },
+  {
+    "name": "ESPN",
+    "logo": "https://image.tmdb.org/t/p/original/ymuWlPllUC1TYw36qjsmia0XqJ8.jpg"
+  },
+  {
+    "name": "ESPN Plus",
+    "logo": "https://image.tmdb.org/t/p/original/kYOixe7a3Vg5o6DG1i2S9MMK640.jpg"
+  },
+  {
+    "name": "Echoboom Amazon Channel ",
+    "logo": "https://image.tmdb.org/t/p/original/5fjo9JkLUHsyFmvSxNINObCgkGj.jpg"
+  },
+  {
+    "name": "Eros Now Select Apple TV Channel",
+    "logo": "https://image.tmdb.org/t/p/original/cqgeSQHqKEkfcmsiy7GoCnf1Q2I.jpg"
+  },
+  {
+    "name": "Eternal Family",
+    "logo": "https://image.tmdb.org/t/p/original/in4AaJPqO6wCquDcXsirin7UQBb.jpg"
+  },
+  {
+    "name": "Eventive",
+    "logo": "https://image.tmdb.org/t/p/original/fwx5Ed64TkfWiRH1SOSkc4781Ts.jpg"
+  },
+  {
+    "name": "FOUND TV",
+    "logo": "https://image.tmdb.org/t/p/original/mD3KV7olfMJOBxJqKKPjvNrpVJF.jpg"
+  },
+  {
+    "name": "FUEL TV+ Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/rfW4jnVRJ0dYv3AVqhupuindAGs.jpg"
+  },
+  {
+    "name": "FXNow",
+    "logo": "https://image.tmdb.org/t/p/original/m4KUe3UoTnLgN4g6txYMnBqeUI5.jpg"
+  },
+  {
+    "name": "FYI Network",
+    "logo": "https://image.tmdb.org/t/p/original/mfNkTJi4a462s69AxANQQU6IA7n.jpg"
+  },
+  {
+    "name": "Fandango At Home",
+    "logo": "https://image.tmdb.org/t/p/original/19fkcOz0xeUgCVW8tO85uOYnYK9.jpg"
+  },
+  {
+    "name": "Fandango at Home Free",
+    "logo": "https://image.tmdb.org/t/p/original/19fkcOz0xeUgCVW8tO85uOYnYK9.jpg"
+  },
+  {
+    "name": "Fandor",
+    "logo": "https://image.tmdb.org/t/p/original/45lSM3J7Ts4TXTtDv0EuTPL0eH5.jpg"
+  },
+  {
+    "name": "Fandor Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/3eVIcUeRXji5SBV7gEv4f5U4CqV.jpg"
+  },
+  {
+    "name": "Fawesome",
+    "logo": "https://image.tmdb.org/t/p/original/pSUa7lMYLoQAU00ikXoHxmOfTZ9.jpg"
+  },
+  {
+    "name": "Fear Factory Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/s1G5QtQxGzZGgNzqt3A78dMxz9z.jpg"
+  },
+  {
+    "name": "FidoTV Channel Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/n8t9mizmhbIVHgBFkY3RWp6MpK4.jpg"
+  },
+  {
+    "name": "Film Movement Plus",
+    "logo": "https://image.tmdb.org/t/p/original/8cjvUhc1ga7ySEdAFM7Ok9G6HOr.jpg"
+  },
+  {
+    "name": "Film Movement Plus Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/cI2eH5SqS6RK5Vbo7YJsbDcr8Qa.jpg"
+  },
+  {
+    "name": "FilmBox Live Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/xJ3B83btVmp4wyRGRRRgWCibTLI.jpg"
+  },
+  {
+    "name": "FilmBox+",
+    "logo": "https://image.tmdb.org/t/p/original/fbveJTcro9Xw2KuPIIoPPePHiwy.jpg"
+  },
+  {
+    "name": "Filmzie",
+    "logo": "https://image.tmdb.org/t/p/original/eUBxtrqO26wAJfYOZJOzhQEo3mm.jpg"
+  },
+  {
+    "name": "Fitfusion Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/63eFvx2SLvmGG2aYA4wrr4ofrBk.jpg"
+  },
+  {
+    "name": "Flix Premiere",
+    "logo": "https://image.tmdb.org/t/p/original/wCKOLlsilq4I0Iv1NSJTToPEQAo.jpg"
+  },
+  {
+    "name": "FlixFling",
+    "logo": "https://image.tmdb.org/t/p/original/yFGu4sSzwUMfhwmSsZgez8QhaVl.jpg"
+  },
+  {
+    "name": "FlixHouse",
+    "logo": "https://image.tmdb.org/t/p/original/69eoIMVggmpyY7Aa8qeN4jsREfd.jpg"
+  },
+  {
+    "name": "Food Matters Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/zEzfWPUzj52e7UeBKZuRJnP394I.jpg"
+  },
+  {
+    "name": "Food Network",
+    "logo": "https://image.tmdb.org/t/p/original/b5umeBN4kFf5KJ6FZiBkftA4q5q.jpg"
+  },
+  {
+    "name": "Fox",
+    "logo": "https://image.tmdb.org/t/p/original/fpLJgEK68o2ATtz2gEdYkevUYIF.jpg"
+  },
+  {
+    "name": "France Channel Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/lXcldSz4TB0EiEcv4TqvzdUdEkG.jpg"
+  },
+  {
+    "name": "Freeform",
+    "logo": "https://image.tmdb.org/t/p/original/4cHGd32hhEHmFjDGJcjVEAwFQg0.jpg"
+  },
+  {
+    "name": "Full Moon Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/xIu1EW7y2EC7RD3Wqe0Ogi5NAuo.jpg"
+  },
+  {
+    "name": "Fuse+ Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/lRGoPIT0vFf3xDJgp6sxfDNsxeP.jpg"
+  },
+  {
+    "name": "Gaia Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/7SOOyT9PP0DMdsCXESdfMqbrFKW.jpg"
+  },
+  {
+    "name": "Gaiam TV Yoga & Fit",
+    "logo": "https://image.tmdb.org/t/p/original/pJRVLFLEPNeXra6AoRp5SQ2txhy.jpg"
+  },
+  {
+    "name": "GlewedTV",
+    "logo": "https://image.tmdb.org/t/p/original/pr64iEnZZ3qjsUqWS39R5JC97CX.jpg"
+  },
+  {
+    "name": "Google Play Movies",
+    "logo": "https://image.tmdb.org/t/p/original/8z7rC8uIDaTM91X0ZfkRf04ydj2.jpg"
+  },
+  {
+    "name": "Great American Pure Flix Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/dSlc8zEOaeKC1y2RbypHSZIFzNy.jpg"
+  },
+  {
+    "name": "Green Planet Stream Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/cASytGdjlh5PcGR5pH92l0VCQ2a.jpg"
+  },
+  {
+    "name": "GuideDoc",
+    "logo": "https://image.tmdb.org/t/p/original/eKVmLFHW5PeNhuR7Nedd8OIxW2M.jpg"
+  },
+  {
+    "name": "HGTV",
+    "logo": "https://image.tmdb.org/t/p/original/5Vp8QzvrVsWDIBWgoTm0cNdeSgc.jpg"
+  },
+  {
+    "name": "HISTORY Vault Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/fr8lHD0EAYU01UIhg6u8kJrk7jQ.jpg"
+  },
+  {
+    "name": "HISTORY Vault Apple TV Channel",
+    "logo": "https://image.tmdb.org/t/p/original/fsert5S2L3CWSFyaAODiWPOScmz.jpg"
+  },
+  {
+    "name": "Hallmark+ Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/wVxA3Rw87917VEXChiVKZpXUjSm.jpg"
+  },
+  {
+    "name": "Hallmark+ Apple TV Channel",
+    "logo": "https://image.tmdb.org/t/p/original/hGIjvx8BIK4sHZwRYyyB17Pfywj.jpg"
+  },
+  {
+    "name": "Here TV",
+    "logo": "https://image.tmdb.org/t/p/original/kiNWL1wGBg3z2FBXJcd8R8MaZrV.jpg"
+  },
+  {
+    "name": "Here TV  Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/jIlFdRIvVEiwbDyigm6WbrLI3Lz.jpg"
+  },
+  {
+    "name": "Hi-YAH",
+    "logo": "https://image.tmdb.org/t/p/original/pPoqVHcko7XoCRrPus4boDW90uM.jpg"
+  },
+  {
+    "name": "Hi-YAH Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/aysFX0644QGN9wQghp46qn08N0d.jpg"
+  },
+  {
+    "name": "HiDive",
+    "logo": "https://image.tmdb.org/t/p/original/iCV9oPBeoLDC5okFRZEgQkx7je0.jpg"
+  },
+  {
+    "name": "Hidive Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/bpA0pUd1LqMJOPwdbUIdUPfP3gE.jpg"
+  },
+  {
+    "name": "History",
+    "logo": "https://image.tmdb.org/t/p/original/xqZSzhIcq8qaAU13rMhVhzDi4T8.jpg"
+  },
+  {
+    "name": "History Vault",
+    "logo": "https://image.tmdb.org/t/p/original/z5jtxEEeJEK1kYDqbyXzfquolC9.jpg"
+  },
+  {
+    "name": "Hoichoi",
+    "logo": "https://image.tmdb.org/t/p/original/u7dwMceEbjxd1N3TLEUBILSK2x6.jpg"
+  },
+  {
+    "name": "Hoopla",
+    "logo": "https://image.tmdb.org/t/p/original/j7D006Uy3UWwZ6G0xH6BMgIWTzH.jpg"
+  },
+  {
+    "name": "Hopster Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/3EFwJrJalr0YEgN1ENwrYbIar3Q.jpg"
+  },
+  {
+    "name": "IFC Films Unlimited Apple TV Channel",
+    "logo": "https://image.tmdb.org/t/p/original/tPvmybuDUn84aDps72GiMbvr2xU.jpg"
+  },
+  {
+    "name": "Indie Club Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/A2fwubFtlBYXJtXAXMBcqNg646f.jpg"
+  },
+  {
+    "name": "IndieFlix",
+    "logo": "https://image.tmdb.org/t/p/original/mjsNfr0lswbRx9hbEFkgqJkBjFt.jpg"
+  },
+  {
+    "name": "IndieFlix Shorts Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/lerlw1kMpDQhfJqC0Z5T0ajCcpQ.jpg"
+  },
+  {
+    "name": "IndiePix Unlimited Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/2MK74M3Y7VLeaODobGxCH5m2Xdu.jpg"
+  },
+  {
+    "name": "Investigation Discovery",
+    "logo": "https://image.tmdb.org/t/p/original/1oxTHsIcxJwVcubHLnHwl0g60EI.jpg"
+  },
+  {
+    "name": "Jolt Film",
+    "logo": "https://image.tmdb.org/t/p/original/sBTV0rN8JUhF4G3uIceinWtQ3gi.jpg"
+  },
+  {
+    "name": "JustWatchTV",
+    "logo": "https://image.tmdb.org/t/p/original/uCMLyl8jGIbInVyDeCeV6kpciFm.jpg"
+  },
+  {
+    "name": "Kanopy",
+    "logo": "https://image.tmdb.org/t/p/original/rcBwnERpNfPfWB5DaSTyEMCZbCA.jpg"
+  },
+  {
+    "name": "Kartoon Channel Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/INfMOg2Jd6PQlui9S7ZuFVrb48.jpg"
+  },
+  {
+    "name": "Kidstream Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/juECZMRYkmLlJxRQLhB4rZtIfwP.jpg"
+  },
+  {
+    "name": "Kino Film Collection",
+    "logo": "https://image.tmdb.org/t/p/original/l8nPh3HtqfIJiFTYT7RdNdsv1XD.jpg"
+  },
+  {
+    "name": "Klassiki",
+    "logo": "https://image.tmdb.org/t/p/original/ehLnHewfxeKWCL7PT5K4AzTXIcV.jpg"
+  },
+  {
+    "name": "Kocowa",
+    "logo": "https://image.tmdb.org/t/p/original/hwsU65QW7A4dbMEWkDpgHyCNcfS.jpg"
+  },
+  {
+    "name": "Kocowa Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/hStl3hxyHcqhh5BnfHU4bUsypGd.jpg"
+  },
+  {
+    "name": "Lifetime",
+    "logo": "https://image.tmdb.org/t/p/original/tWq6XvHqPjBW1BZTpf4Nziy8CDD.jpg"
+  },
+  {
+    "name": "Lifetime Movie Club",
+    "logo": "https://image.tmdb.org/t/p/original/m4ofXxkTOj04N8df5KJGCIjnWii.jpg"
+  },
+  {
+    "name": "Lifetime Movie Club Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/bKWKqZYT3wrpq1Lyi2qSmx1qlqh.jpg"
+  },
+  {
+    "name": "Lifetime Movie Club Apple TV Channel",
+    "logo": "https://image.tmdb.org/t/p/original/cpSQ9P0ntzr1gZcxHIyaryihpgH.jpg"
+  },
+  {
+    "name": "MGM Plus",
+    "logo": "https://image.tmdb.org/t/p/original/ctiRpS16dlaTXQBSsiFncMrgWmh.jpg"
+  },
+  {
+    "name": "MGM Plus Roku Premium Channel",
+    "logo": "https://image.tmdb.org/t/p/original/lD7HKUmXDvUya58DceiTA809Zbf.jpg"
+  },
+  {
+    "name": "MGM+ Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/efu1Cqc63XrPBoreYnf2mn0Nizj.jpg"
+  },
+  {
+    "name": "MTV Hits Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/s1lqwlysH7Y476HqgGDze0bqMUe.jpg"
+  },
+  {
+    "name": "MUBI",
+    "logo": "https://image.tmdb.org/t/p/original/fj9Y8iIMFUC6952HwxbGixTQPb7.jpg"
+  },
+  {
+    "name": "MUBI Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/a4IDLKjvP5gvq7tNlg2Xw5YyEkI.jpg"
+  },
+  {
+    "name": "MZ Choice Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/hTAIgvUnmu1Yv0wFVJRu9KKAPtJ.jpg"
+  },
+  {
+    "name": "Magellan TV",
+    "logo": "https://image.tmdb.org/t/p/original/mSH24WQcRDJ2fsL5iucXqqRnSRb.jpg"
+  },
+  {
+    "name": "Mangolia Network Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/ctJE3cuuNYpG1o19VOCzJLxZnny.jpg"
+  },
+  {
+    "name": "Mangolia Selects Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/v2DlnoBWsXnWJQKKez6C6rjqzgk.jpg"
+  },
+  {
+    "name": "Marquee TV Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/iv6NdY8gjDw6G8oioa1xDhvh3cj.jpg"
+  },
+  {
+    "name": "Max",
+    "logo": "https://image.tmdb.org/t/p/original/170ZfHTLT6ZlG38iLLpNYcBGUkG.jpg"
+  },
+  {
+    "name": "Max  Originals Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/2aOYyNzcLZtd1ooN6K9dWFQU9GN.jpg"
+  },
+  {
+    "name": "Max Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/1Cyi87zUbeRHCzpm2wWekgr6EYw.jpg"
+  },
+  {
+    "name": "Metrograph",
+    "logo": "https://image.tmdb.org/t/p/original/q4WTdA5wH3TXDFiYKejCCwSOyJ8.jpg"
+  },
+  {
+    "name": "Mhz Choice",
+    "logo": "https://image.tmdb.org/t/p/original/tnxLjN2lLYpkTIX8NPSId6bgqh8.jpg"
+  },
+  {
+    "name": "Microsoft Store",
+    "logo": "https://image.tmdb.org/t/p/original/5vfrJQgNe9UnHVgVNAwZTy0Jo9o.jpg"
+  },
+  {
+    "name": "Midnight Pulp",
+    "logo": "https://image.tmdb.org/t/p/original/8s4adSGz4UmVOP5uegNkoikSFLV.jpg"
+  },
+  {
+    "name": "Midnight Pulp Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/ni2JXG9zznS4RYIGmeyBap1KwTD.jpg"
+  },
+  {
+    "name": "Monsters and Nightmares Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/iNyKnUIIgICR71PO16ptEwJhzb2.jpg"
+  },
+  {
+    "name": "Motorvision TV Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/jNcidIqJIs75zwPGbOXa1YRXqgW.jpg"
+  },
+  {
+    "name": "MovieSaints",
+    "logo": "https://image.tmdb.org/t/p/original/9vMVMnVnWwxt0TkCazKLYW1zuqY.jpg"
+  },
+  {
+    "name": "MovieSphere+ Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/bEI5UgVjthdjiBXGiKRy7uSCRvF.jpg"
+  },
+  {
+    "name": "MyOutdoor TV Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/f8IYdpLZ7WsEbwm1Az1k63lX76i.jpg"
+  },
+  {
+    "name": "MyOutdoorTV",
+    "logo": "https://image.tmdb.org/t/p/original/bSmoVepHvK0ijBAWGx3QlIeTtsu.jpg"
+  },
+  {
+    "name": "NBC",
+    "logo": "https://image.tmdb.org/t/p/original/6hFf3sIdmXSAczy3i6tLSmy6gwK.jpg"
+  },
+  {
+    "name": "National Geographic",
+    "logo": "https://image.tmdb.org/t/p/original/nlOrX8YVYjxFkEpfvJHayNg9UAB.jpg"
+  },
+  {
+    "name": "Netflix Kids",
+    "logo": "https://image.tmdb.org/t/p/original/kwVegvKCinXTPuzZmYT1J3i1HJz.jpg"
+  },
+  {
+    "name": "Netflix Standard with Ads",
+    "logo": "https://image.tmdb.org/t/p/original/dpR8r13zWDeUR0QkzWidrdMxa56.jpg"
+  },
+  {
+    "name": "Night Flight Plus",
+    "logo": "https://image.tmdb.org/t/p/original/zOWoxUMmGW0OfDFAQsCosho2PZz.jpg"
+  },
+  {
+    "name": "Noggin Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/uXFEctwGkorVz163dVSZeZkBEQU.jpg"
+  },
+  {
+    "name": "OUTtv Apple TV Channel",
+    "logo": "https://image.tmdb.org/t/p/original/1SuB6tXdKaW4qDRDiqm9C1nr1mD.jpg"
+  },
+  {
+    "name": "OVID",
+    "logo": "https://image.tmdb.org/t/p/original/jxavsObOHN6UqlbuZQ1UpVRVv6X.jpg"
+  },
+  {
+    "name": "OWN Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/nk6WIMO5RhiOvvzYmgiwTuVrx9D.jpg"
+  },
+  {
+    "name": "OXYGEN",
+    "logo": "https://image.tmdb.org/t/p/original/9BcTvaS8RhQ58LoEbiuoCNghbcz.jpg"
+  },
+  {
+    "name": "OnDemandKorea",
+    "logo": "https://image.tmdb.org/t/p/original/gR8rrj71VCLjlF1LJpplo72MXf0.jpg"
+  },
+  {
+    "name": "Outside TV Features Amzon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/5hN7tymQmuxCQQAHzEITPBKfzbW.jpg"
+  },
+  {
+    "name": "Outside Watch",
+    "logo": "https://image.tmdb.org/t/p/original/jLD5zHgsAhSWBRTnMUOLaXrUuVI.jpg"
+  },
+  {
+    "name": "Ovation TV",
+    "logo": "https://image.tmdb.org/t/p/original/wSvS4FbVGh81CnC51JqXA3xaj27.jpg"
+  },
+  {
+    "name": "PBS",
+    "logo": "https://image.tmdb.org/t/p/original/iLjStQKQwzyxXJb3jyNpvDmW9mx.jpg"
+  },
+  {
+    "name": "PBS America Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/kkSTwH50YhH45XXYAAHXoV0G8ro.jpg"
+  },
+  {
+    "name": "PBS Documentaries Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/dmVW0l1FRIR3yY8XSQR5zhavC2U.jpg"
+  },
+  {
+    "name": "PBS Kids Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/lIXDKV7LrZfF3SR2m8EQrMVRI5C.jpg"
+  },
+  {
+    "name": "PBS Living Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/ySxIaDc1QnBTEgXkDb8BpVIRKmN.jpg"
+  },
+  {
+    "name": "PBS Masterpiece Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/xN1vKpcypShJrWmf1t3dyGJM7sO.jpg"
+  },
+  {
+    "name": "Paramount Plus",
+    "logo": "https://image.tmdb.org/t/p/original/h5DcR0J2EESLitnhR8xLG1QymTE.jpg"
+  },
+  {
+    "name": "Paramount Plus Apple TV Channel ",
+    "logo": "https://image.tmdb.org/t/p/original/tJqmTmQ8jp9WfyaZfApHK8lSywA.jpg"
+  },
+  {
+    "name": "Paramount+ Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/hExO4PtimLIYn3kBOrzsejNv7cT.jpg"
+  },
+  {
+    "name": "Paramount+ MTV Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/p0dh0SEsxoEPRB7Z4ZuUbqqLoHQ.jpg"
+  },
+  {
+    "name": "Paramount+ Originals Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/pHk7EWuTXHVtwi4TuenmpgL6yQ3.jpg"
+  },
+  {
+    "name": "Paramount+ Roku Premium Channel",
+    "logo": "https://image.tmdb.org/t/p/original/ywIoxSjoYJGUIbR6BfxUiCHdPi3.jpg"
+  },
+  {
+    "name": "Paramount+ with Showtime",
+    "logo": "https://image.tmdb.org/t/p/original/kkUHFtdjasnnOknZN69TbZ2fCTh.jpg"
+  },
+  {
+    "name": "Passionflix Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/7uW24jZJ6BpwQaul7dWnPxcI9DH.jpg"
+  },
+  {
+    "name": "Peacock Premium",
+    "logo": "https://image.tmdb.org/t/p/original/2aGrp1xw3qhwCYvNGAJZPdjfeeX.jpg"
+  },
+  {
+    "name": "Peacock Premium Plus",
+    "logo": "https://image.tmdb.org/t/p/original/drPlq5beqXtBaP7MNs8W616YRhm.jpg"
+  },
+  {
+    "name": "Philo",
+    "logo": "https://image.tmdb.org/t/p/original/ptmbGSttkyzawLbxx9MElmxKuVo.jpg"
+  },
+  {
+    "name": "Pinoy Box Office Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/2rhEQ6ejnEDz8t4oLLf70cotBVh.jpg"
+  },
+  {
+    "name": "PixL Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/cuwYUewJaNhkK7TtoWvdazfYxHY.jpg"
+  },
+  {
+    "name": "Planet Earth Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/9LIPMqqW8DpxQiZSMl4SSPrxKDR.jpg"
+  },
+  {
+    "name": "Plex",
+    "logo": "https://image.tmdb.org/t/p/original/vLZKlXUNDcZR7ilvfY9Wr9k80FZ.jpg"
+  },
+  {
+    "name": "Plex Channel",
+    "logo": "https://image.tmdb.org/t/p/original/27WMfRN7pQE3j5Khm8fPM7vYyLV.jpg"
+  },
+  {
+    "name": "Pluto TV",
+    "logo": "https://image.tmdb.org/t/p/original/dB8G41Q6tSL5NBisrIeqByfepBc.jpg"
+  },
+  {
+    "name": "Pongalo Amazon Channel  ",
+    "logo": "https://image.tmdb.org/t/p/original/t7I2Tx6Q7Nz96KexIPjkzUJOCbt.jpg"
+  },
+  {
+    "name": "Popflick",
+    "logo": "https://image.tmdb.org/t/p/original/f5yNbaK23OSWV5IocAj8FZwIOQj.jpg"
+  },
+  {
+    "name": "Public Domain Movies",
+    "logo": "https://image.tmdb.org/t/p/original/aN0Y2BNZQBH91JkVOeLTs8IhQrH.jpg"
+  },
+  {
+    "name": "Pure Flix",
+    "logo": "https://image.tmdb.org/t/p/original/7L4eXQD0yFVDKZ2qwYtxcV5gm6n.jpg"
+  },
+  {
+    "name": "Qello Concerts by Stingray Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/nRNX3ijGNhKfX9av9wDZK9SUYsq.jpg"
+  },
+  {
+    "name": "REELZ Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/lCxDB8sb6zDXF4EqT67zRlY38TX.jpg"
+  },
+  {
+    "name": "Rakuten Viki",
+    "logo": "https://image.tmdb.org/t/p/original/5L2bwr9DhUg28oSMEPRCNwB2y7B.jpg"
+  },
+  {
+    "name": "RetroCrush Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/6cQvPAFHDOSq3cXPwcCbh3gCpOi.jpg"
+  },
+  {
+    "name": "Retrocrush",
+    "logo": "https://image.tmdb.org/t/p/original/5zUnCq0pvixEtQafzOBBWqxNRvX.jpg"
+  },
+  {
+    "name": "Reveel",
+    "logo": "https://image.tmdb.org/t/p/original/en3dbHAWzDpvDhsI0G8LphUhpBr.jpg"
+  },
+  {
+    "name": "Revry",
+    "logo": "https://image.tmdb.org/t/p/original/llQ8zV50Wqh4gYCYfr52R1b9gfD.jpg"
+  },
+  {
+    "name": "Revry Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/kVzt0d2rs4KIBAvt0UPvF3HJoWv.jpg"
+  },
+  {
+    "name": "Runtime",
+    "logo": "https://image.tmdb.org/t/p/original/oJRCAz1WKkKM9Ge7mX5KFnegTNY.jpg"
+  },
+  {
+    "name": "Ryan and Friends Plus Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/x1imMFxHewLfnVvl9pvKDtU0HXz.jpg"
+  },
+  {
+    "name": "Science Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/9TWmmyzzdu2PdVuUvXlv1Ye9DYy.jpg"
+  },
+  {
+    "name": "Science Channel",
+    "logo": "https://image.tmdb.org/t/p/original/28cQ8Ux0pauEHyeZ7J9MTNF4RBP.jpg"
+  },
+  {
+    "name": "Screambox",
+    "logo": "https://image.tmdb.org/t/p/original/x2w49qSgz7bU3o3rENO9Yc11OmC.jpg"
+  },
+  {
+    "name": "Screambox Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/vmXC3D9Kqtt9TEohDEmcaxnLYA5.jpg"
+  },
+  {
+    "name": "ScreenPix Apple TV Channel",
+    "logo": "https://image.tmdb.org/t/p/original/96HJkA4nMkcOtiqH9oF1YYtGBHK.jpg"
+  },
+  {
+    "name": "Sensical Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/qdso2SzItOCRPYuXZpB18PJHGO1.jpg"
+  },
+  {
+    "name": "Shahid VIP",
+    "logo": "https://image.tmdb.org/t/p/original/7qZED0kLBtiV8mLRNBtW4PQCAqW.jpg"
+  },
+  {
+    "name": "ShortsTV Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/2nFBw1zMzN1AujFaCsmsgSKWdfS.jpg"
+  },
+  {
+    "name": "Shout! Factory Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/ivRp15loTWoVy3eEHALoYEyXI8J.jpg"
+  },
+  {
+    "name": "Shout! Factory TV",
+    "logo": "https://image.tmdb.org/t/p/original/y9jFndski0fRO4MHh3yg5PIL9ZI.jpg"
+  },
+  {
+    "name": "Shudder",
+    "logo": "https://image.tmdb.org/t/p/original/vEtdiYRPRbDCp1Tcn3BEPF1Ni76.jpg"
+  },
+  {
+    "name": "Shudder Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/qb6Lj5BhNJavdmRVDzAqAjd4Tj3.jpg"
+  },
+  {
+    "name": "Shudder Apple TV Channel",
+    "logo": "https://image.tmdb.org/t/p/original/kLfq0I2MwiUFUY9yI1GwOeKxX8f.jpg"
+  },
+  {
+    "name": "Spectrum On Demand",
+    "logo": "https://image.tmdb.org/t/p/original/aAb9CUHjFe9Y3O57qnrJH0KOF1B.jpg"
+  },
+  {
+    "name": "Starz",
+    "logo": "https://image.tmdb.org/t/p/original/yIKwylTLP1u8gl84Is7FItpYLGL.jpg"
+  },
+  {
+    "name": "Starz Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/esiLBRzDUwodjfN8gA4qj7l3ZF7.jpg"
+  },
+  {
+    "name": "Starz Apple TV Channel",
+    "logo": "https://image.tmdb.org/t/p/original/1C5EVCWyQD798CE1DFfcm6oAbxP.jpg"
+  },
+  {
+    "name": "Starz Roku Premium Channel",
+    "logo": "https://image.tmdb.org/t/p/original/9laPF1MAiUxlqM8T98F3Gj0bhzd.jpg"
+  },
+  {
+    "name": "Stingray Classica Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/ycsoT2ziFng88zD2bIPLkHPICdj.jpg"
+  },
+  {
+    "name": "Stingray Djazz Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/n9DgrL43vTO4BAOrPzvfeVnIhFS.jpg"
+  },
+  {
+    "name": "Stingray Karaoke Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/hhrxkhGheXYIxySqg4RcvO4tywc.jpg"
+  },
+  {
+    "name": "Strand Releasing Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/jUgtBLZzpaLVTNnqGYDOU9BlCzU.jpg"
+  },
+  {
+    "name": "Stupid Co",
+    "logo": "https://image.tmdb.org/t/p/original/xghkVW88ucmejNkk7DEFGZh8dvs.jpg"
+  },
+  {
+    "name": "Sun Nxt",
+    "logo": "https://image.tmdb.org/t/p/original/6KEQzITx2RrCAQt5Nw9WrL1OI8z.jpg"
+  },
+  {
+    "name": "Sundance Now",
+    "logo": "https://image.tmdb.org/t/p/original/1Edma9SrJnqkQW3BqFd2rJNHZvX.jpg"
+  },
+  {
+    "name": "Sundance Now Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/i8PzzzOVJfXWLE1v5Up7nGTWWhp.jpg"
+  },
+  {
+    "name": "Sundance Now Apple TV Channel",
+    "logo": "https://image.tmdb.org/t/p/original/1x0LxXHUibIolT5fxdSamGGMBC3.jpg"
+  },
+  {
+    "name": "TBS",
+    "logo": "https://image.tmdb.org/t/p/original/cZvP3XsDKlHFhNIyHYCVPStXT5l.jpg"
+  },
+  {
+    "name": "TCM",
+    "logo": "https://image.tmdb.org/t/p/original/8SIxng8eznACvCTRsN1FZfd5Ycg.jpg"
+  },
+  {
+    "name": "TCM Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/aXCARZI0E2pfqd8A4YfyjUjU1pi.jpg"
+  },
+  {
+    "name": "TLC",
+    "logo": "https://image.tmdb.org/t/p/original/veArLGnRXZEGkjpkJrhfMeasODk.jpg"
+  },
+  {
+    "name": "TNT",
+    "logo": "https://image.tmdb.org/t/p/original/76CvnJAKAPbJuiXYwQGN7PFqOci.jpg"
+  },
+  {
+    "name": "Takflix",
+    "logo": "https://image.tmdb.org/t/p/original/ed0vz5bryWIhQB5sHiuGvHKnHHn.jpg"
+  },
+  {
+    "name": "Tastemade Amazon Channel ",
+    "logo": "https://image.tmdb.org/t/p/original/m82oWNiWVsngQhX2CvNsBezdcGz.jpg"
+  },
+  {
+    "name": "Tastemade Apple TV Channel",
+    "logo": "https://image.tmdb.org/t/p/original/5a0E4ozONnF8rw5cI3n9uueK9WM.jpg"
+  },
+  {
+    "name": "The CW",
+    "logo": "https://image.tmdb.org/t/p/original/spcwROYevucLluqZZ8Fv75UuTBt.jpg"
+  },
+  {
+    "name": "The Coda Collection Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/3hMplVgqwHtta9UdJWSze18SgSk.jpg"
+  },
+  {
+    "name": "The Great Courses Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/e0MOb15WwgMmXPpza4eLqS0OmW6.jpg"
+  },
+  {
+    "name": "The Oprah Winfrey Network",
+    "logo": "https://image.tmdb.org/t/p/original/z4MqXgpzqxVy7GF8mlPOe8VOx82.jpg"
+  },
+  {
+    "name": "The Roku Channel",
+    "logo": "https://image.tmdb.org/t/p/original/wQzSN83BnWVgO7xEh0SeTVqtrFv.jpg"
+  },
+  {
+    "name": "The Surf Network Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/mg6cM5baVFe1uiPGl4vQ9GuULRI.jpg"
+  },
+  {
+    "name": "Toku Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/o8NzNizvk9TeZ1hfMtMOQ5a6h8k.jpg"
+  },
+  {
+    "name": "Toon Goggles",
+    "logo": "https://image.tmdb.org/t/p/original/vpSjs2UcViGYYHyuI8Kow9oHEtU.jpg"
+  },
+  {
+    "name": "Travel Channel",
+    "logo": "https://image.tmdb.org/t/p/original/8NwVgZlX4Nh3WCebkaKtbSmdDn1.jpg"
+  },
+  {
+    "name": "Troma NOW",
+    "logo": "https://image.tmdb.org/t/p/original/2CYF8CNs5WK3sB69K0AlmwUxrzv.jpg"
+  },
+  {
+    "name": "True Royalty Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/a18cH2xkALf1eXyPsIkcL7PUn92.jpg"
+  },
+  {
+    "name": "True Story",
+    "logo": "https://image.tmdb.org/t/p/original/aRPDQvVcpeY07sjI6lAALMCL0ti.jpg"
+  },
+  {
+    "name": "Tubi TV",
+    "logo": "https://image.tmdb.org/t/p/original/zLYr7OPvpskMA4S79E3vlCi71iC.jpg"
+  },
+  {
+    "name": "UP Faith & Family Amazon Channel ",
+    "logo": "https://image.tmdb.org/t/p/original/oh3P6b1Ycutah7fVy0xixhBJ4Du.jpg"
+  },
+  {
+    "name": "UP Faith & Family Apple TV Channel",
+    "logo": "https://image.tmdb.org/t/p/original/92iY4soQNVzNM02mHGjqovPdzdF.jpg"
+  },
+  {
+    "name": "USA Network",
+    "logo": "https://image.tmdb.org/t/p/original/A95qgiMz6ulV2SxeKcJ5Gc9pqGS.jpg"
+  },
+  {
+    "name": "Univer Video",
+    "logo": "https://image.tmdb.org/t/p/original/44E23wCM3WLsvAVRyk6fye76cZb.jpg"
+  },
+  {
+    "name": "VH1",
+    "logo": "https://image.tmdb.org/t/p/original/zH8mZ7YV2WHuVuLyOjtnIjar3Zn.jpg"
+  },
+  {
+    "name": "VIX ",
+    "logo": "https://image.tmdb.org/t/p/original/jwRPknT20dfU1GeVqbcDXFyvtdG.jpg"
+  },
+  {
+    "name": "Vemox Cine Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/sqhMs7Q8BDbwrTvibePs7FusIvf.jpg"
+  },
+  {
+    "name": "Viaplay Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/sElGn8Ml7yYKuAsceZYQ0nKpqHa.jpg"
+  },
+  {
+    "name": "Vice TV ",
+    "logo": "https://image.tmdb.org/t/p/original/zU75skIWNQ06SeFkmbFoaqhg069.jpg"
+  },
+  {
+    "name": "Vix Gratis Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/iHQ9I6iKiIAHSg4sAztp9QGYSs4.jpg"
+  },
+  {
+    "name": "WOW Presents Plus",
+    "logo": "https://image.tmdb.org/t/p/original/6dET59jNU0ADysghEjl8Unuc7Ca.jpg"
+  },
+  {
+    "name": "WWE Network",
+    "logo": "https://image.tmdb.org/t/p/original/7Wo1H7YMmRy7S56sz6HJAMYRdGq.jpg"
+  },
+  {
+    "name": "Warriors and Gangsters Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/8mGj6Xg1lqd6Ver0CrSwLH48Hns.jpg"
+  },
+  {
+    "name": "Watchit.Kid Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/6sJraCgVqaegEWm22nXIeCAl0LK.jpg"
+  },
+  {
+    "name": "WeTV",
+    "logo": "https://image.tmdb.org/t/p/original/9abwIEW9wZ12RavyKnInlK684xm.jpg"
+  },
+  {
+    "name": "XLTV Amazon Channel ",
+    "logo": "https://image.tmdb.org/t/p/original/7dnlt8LiBbHmJUm2snCTQhyjYJP.jpg"
+  },
+  {
+    "name": "Xive TV Documentaries Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/lqIsrsNpC0rioPLFzI0hbDL5FdF.jpg"
+  },
+  {
+    "name": "Xumo Play",
+    "logo": "https://image.tmdb.org/t/p/original/xfKqqWYYIyvjECOFOaYtJdD7gl3.jpg"
+  },
+  {
+    "name": "Yipee Kids TV Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/w1slTKKj2LB6kaaIjDWuIXJuOIs.jpg"
+  },
+  {
+    "name": "Yoga and Fitness TV Amazon channel",
+    "logo": "https://image.tmdb.org/t/p/original/48XBW3BcvxVte9hen9RkapubeCW.jpg"
+  },
+  {
+    "name": "YouTube",
+    "logo": "https://image.tmdb.org/t/p/original/pTnn5JwWr4p3pG8H6VrpiQo7Vs0.jpg"
+  },
+  {
+    "name": "YouTube Free",
+    "logo": "https://image.tmdb.org/t/p/original/4tJBhJcuF1ZstI5Yqu82G0yroLa.jpg"
+  },
+  {
+    "name": "YouTube Premium",
+    "logo": "https://image.tmdb.org/t/p/original/rMb93u1tBeErSYLv79zSTR07UdO.jpg"
+  },
+  {
+    "name": "Youtube TV",
+    "logo": "https://image.tmdb.org/t/p/original/G4ywpel53eVohvZ8INFihZkuti.jpg"
+  },
+  {
+    "name": "ZenLIFE by Stingray Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/hYJRlP9ZpG7F4dh4Tf3D9RoA1uC.jpg"
+  },
+  {
+    "name": "aha",
+    "logo": "https://image.tmdb.org/t/p/original/8WerMI8XcZXqPpkHTZNtzMzousF.jpg"
+  },
+  {
+    "name": "dAnime Amazon Channel",
+    "logo": "https://image.tmdb.org/t/p/original/7BSGPU2svm8AX9ozbP3Xt8cdp9L.jpg"
+  },
+  {
+    "name": "fuboTV",
+    "logo": "https://image.tmdb.org/t/p/original/9BgaNQRMDvVlji1JBZi6tcfxpKx.jpg"
+  },
+  {
+    "name": "iQIYI",
+    "logo": "https://image.tmdb.org/t/p/original/c4eVkfMna2VzHzZ8N2vWXUnMrlD.jpg"
+  },
+  {
+    "name": "myfilmfriend",
+    "logo": "https://image.tmdb.org/t/p/original/mWAOUnJY6hnQghUZpjuDB815efG.jpg"
+  },
+  {
+    "name": "tru TV",
+    "logo": "https://image.tmdb.org/t/p/original/mMJ6AQUpHDsD5s2Q2dnbpX1NFwp.jpg"
+  }
 ]

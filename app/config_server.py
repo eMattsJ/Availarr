@@ -55,7 +55,7 @@ def test_tmdb(key: str = Query(None)):
 
     url = "https://api.themoviedb.org/3/authentication"
     headers = {"Authorization": f"Bearer {api_key}", "accept": "application/json"}
-    r = requests.get(url, headers=headers)
+    r = requests.get(url, headers=headers, timeout=10)
     log_event("test_tmdb", status=r.status_code)
 
     return {"success": r.status_code == 200}
@@ -73,7 +73,7 @@ def test_overseerr(url: str = Query(None), key: str = Query(None)):
 
     headers = {"X-Api-Key": api_key}
     try:
-        response = requests.get(f"{test_url}/api/v1/user", headers=headers)
+        response = requests.get(f"{test_url}/api/v1/user", headers=headers, timeout=10)
         log_event("test_overseerr", url=test_url, status=response.status_code)
         return {"success": response.status_code == 200}
     except Exception as e:
@@ -88,7 +88,7 @@ def test_discord(url: str = Query(None)):
 
     data = {"content": "✅ Discord webhook test successful."}
     try:
-        r = requests.post(webhook, json=data)
+        r = requests.post(webhook, json=data, timeout=10)
         log_event("test_discord", status=r.status_code)
         return {"success": r.status_code in [200, 204]}
     except Exception as e:
