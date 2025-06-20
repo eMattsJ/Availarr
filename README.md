@@ -116,23 +116,10 @@ flowchart TD
 
 ---
 
-## 📉 Screenshots
-
-| Web Interface                                                                        | Streaming Check                                                                        |
-| ------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------- |
-| ![Web Interface](https://chat.openai.com/image/34c284fd-2697-4e86-8488-86d4fce6b2de) | ![Streaming Check](https://chat.openai.com/image/3c46e041-3c92-4ebf-bd70-61c0d3a32d5e) |
-
----
-
 ## 📊 Logging and Monitoring
 
 * Logs output to stdout and Docker logs
 * Structured logging via `logging.json`
-* Web dashboard shows:
-
-  * Recent requests
-  * Last 5 provider results
-  * System health (coming soon)
 
 ---
 
