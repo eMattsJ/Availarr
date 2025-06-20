@@ -162,7 +162,6 @@ Docker Hub: [https://hub.docker.com/r/ematts/availarr](https://hub.docker.com/r/
 
 ## 📝 Changelog Summary
 
-📝 Changelog Summary
 Frontend & UI
 🚀 Replaced JavaScript-based login error handling with server-rendered {% if error %} block in login.html
 
