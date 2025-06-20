@@ -6,8 +6,6 @@ services:
     image: ematts/availarr:latest
     ports:
       - "8686:8686"
-    volumes:
-      - ./providers.conf:/app/providers.conf
     restart: unless-stopped
     logging:
       driver: json-file
