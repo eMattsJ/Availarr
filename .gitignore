@@ -32,3 +32,4 @@ Thumbs.db
 # Local testing
 docker-compose.local.yml
 app/config.json
+config.json
