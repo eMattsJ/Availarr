@@ -6,6 +6,7 @@ WORKDIR /app
 # Copy all project files into container
 COPY . /app
 COPY app/static /app/static
+COPY app/templates app/templates
 
 # Update system packages and install dependencies
 RUN apt-get update && apt-get upgrade -y && apt-get install -y curl && rm -rf /var/lib/apt/lists/*

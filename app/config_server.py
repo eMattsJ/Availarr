@@ -11,12 +11,14 @@ CONFIG_FILE = os.getenv("CONFIG_PATH", "/config/config.json")
 
 router = APIRouter()
 
+# Password hashing function
 def hash_value(value: str) -> str:
     return hashlib.sha256(value.encode()).hexdigest()
 
+# Default configuration values
 DEFAULT_CONFIG = {
     "username": "admin",
-    "password": hash_value("123456"),
+    "password": hash_value("admin"),
     "require_password_change": True,
     "TMDB_API_KEY": "",
     "OVERSEERR_URL": "",
@@ -25,6 +27,7 @@ DEFAULT_CONFIG = {
     "providers": []
 }
 
+# Incoming config structure
 class EnvConfig(BaseModel):
     TMDB_API_KEY: str
     OVERSEERR_URL: str
@@ -32,8 +35,8 @@ class EnvConfig(BaseModel):
     DISCORD_WEBHOOK_URL: str
     PROVIDERS: list[str] = []
 
+# Load config file or initialize default
 def load_config():
-    # Ensure directory exists for first-time deployment
     config_dir = os.path.dirname(CONFIG_FILE)
     if not os.path.exists(config_dir):
         os.makedirs(config_dir, exist_ok=True)
@@ -50,16 +53,19 @@ def load_config():
         log_event("config_load_error", error=str(e))
         return {}
 
+# Save new config to file
 def save_config(cfg: dict):
     try:
-        if "password" in cfg:
-            cfg["password"] = hash_value(cfg["password"])
+       # if "password" in cfg:
+       #     cfg["password"] = hash_value(cfg["password"])
 
         with open(CONFIG_FILE, "w") as f:
             json.dump(cfg, f, indent=2)
     except Exception as e:
         log_event("config_save_error", error=str(e))
         raise HTTPException(status_code=500, detail="Failed to save configuration")
+
+# --- API Routes ---
 
 @router.get("")
 def get_config():
@@ -85,7 +91,6 @@ def test_tmdb(key: str = Query(None)):
     headers = {"Authorization": f"Bearer {api_key}", "accept": "application/json"}
     r = requests.get(url, headers=headers, timeout=10)
     log_event("test_tmdb", status=r.status_code)
-
     return {"success": r.status_code == 200}
 
 @router.get("/test/overseerr")
@@ -101,9 +106,9 @@ def test_overseerr(url: str = Query(None), key: str = Query(None)):
 
     headers = {"X-Api-Key": api_key}
     try:
-        response = requests.get(f"{test_url}/api/v1/user", headers=headers, timeout=10)
-        log_event("test_overseerr", url=test_url, status=response.status_code)
-        return {"success": response.status_code == 200}
+        resp = requests.get(f"{test_url}/api/v1/user", headers=headers, timeout=10)
+        log_event("test_overseerr", url=test_url, status=resp.status_code)
+        return {"success": resp.status_code == 200}
     except Exception as e:
         log_event("test_overseerr_failed", error=str(e))
         return {"success": False}

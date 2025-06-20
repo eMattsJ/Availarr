@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en" class="dark">
 <head>
-<link rel="icon" href="static/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="static/favicon.ico" type="image/x-icon">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login - Availarr</title>
@@ -15,24 +15,29 @@
   <div class="min-h-screen flex items-center justify-center px-4">
     <div class="bg-gray-900 p-6 rounded-xl shadow max-w-md w-full">
       <h1 class="text-2xl font-bold mb-4 text-center">Login to Availarr</h1>
-      <div id="error" class="hidden bg-red-100 text-red-800 border border-red-400 rounded p-2 mb-4 text-center">Invalid credentials. Please try again.</div>
+
+      {% if error %}
+        <div class="bg-red-100 text-red-800 border border-red-400 rounded p-2 mb-4 text-center">
+          Invalid credentials. Please try again.
+        </div>
+      {% endif %}
+
       <form method="post" action="/login">
         <label class="block text-sm font-semibold mb-1" for="username">Username</label>
-        <input class="w-full p-2 rounded border border-gray-600 bg-gray-700 text-white mb-3" id="username" name="username" type="text" autocomplete="username" required>
+        <input class="w-full p-2 rounded border border-gray-600 bg-gray-700 text-white mb-3"
+               id="username" name="username" type="text" autocomplete="username" required>
 
         <label class="block text-sm font-semibold mb-1" for="password">Password</label>
-        <input class="w-full p-2 rounded border border-gray-600 bg-gray-700 text-white mb-4" id="password" name="password" type="password" autocomplete="current-password" required>
+        <input class="w-full p-2 rounded border border-gray-600 bg-gray-700 text-white mb-4"
+               id="password" name="password" type="password" autocomplete="current-password" required>
 
-        <button class="w-full bg-indigo-600 text-white font-bold py-2 rounded hover:bg-indigo-700" type="submit">Login</button>
+        <button class="w-full bg-indigo-600 text-white font-bold py-2 rounded hover:bg-indigo-700"
+                type="submit">
+          Login
+        </button>
       </form>
     </div>
   </div>
-  <script>
-    const params = new URLSearchParams(window.location.search);
-    if (params.get("error") === "1") {
-      document.getElementById("error").classList.remove("hidden");
-    }
-  </script>
 </body>
 </html>
 
@@ -40,6 +45,7 @@
 <!DOCTYPE html>
 <html lang="en" class="dark">
 <head>
+  <link rel="icon" href="static/favicon.ico" type="image/x-icon">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Change Password - Availarr</title>
