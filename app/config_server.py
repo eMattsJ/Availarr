@@ -5,7 +5,9 @@ from fastapi import APIRouter, HTTPException, Query
 from pydantic import BaseModel
 from app.utils.logging import log_event
 
-CONFIG_FILE = "config.json"
+# Default to Docker volume location for persisted config
+CONFIG_FILE = os.getenv("CONFIG_PATH", "/config/config.json")
+
 router = APIRouter()
 
 class EnvConfig(BaseModel):
@@ -26,8 +28,12 @@ def load_config():
         return {}
 
 def save_config(cfg: dict):
-    with open(CONFIG_FILE, "w") as f:
-        json.dump(cfg, f, indent=2)
+    try:
+        with open(CONFIG_FILE, "w") as f:
+            json.dump(cfg, f, indent=2)
+    except Exception as e:
+        log_event("config_save_error", error=str(e))
+        raise HTTPException(status_code=500, detail="Failed to save configuration")
 
 @router.get("")
 def get_config():
