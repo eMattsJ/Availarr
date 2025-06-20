@@ -68,7 +68,6 @@ services:
 
 volumes:
   availarr_config:
-
 ```
 
 Then deploy:
@@ -80,11 +79,20 @@ docker-compose up -d
 
 ---
 
-### 3. 🚩 Open the Web Interface
+### 3. 🔐 Login & Web Interface
 
 Navigate to: [http://localhost:8686](http://localhost:8686)
 
-There is no login required. On the first visit, you will be prompted to enter:
+On your **first visit**, log in using the default credentials:
+
+```
+Username: admin
+Password: 123456
+```
+
+You will then be prompted to create your **own username and password** to secure the interface.
+
+After logging in, enter the following configuration:
 
 * ✅ Your TMDb API Key
 * ✅ Your Overseerr URL and API Key
@@ -92,6 +100,7 @@ There is no login required. On the first visit, you will be prompted to enter:
 * ✅ The streaming providers you subscribe to (e.g. Netflix, Prime Video, etc.)
 
 > ⚠️ You must press the **Save** button after entering your settings.
+> 🔁 If you forget your credentials, you can reset them by deleting the `config.json` file in the container or volume.
 
 ---
 
@@ -140,7 +149,6 @@ flowchart TD
 Pull requests welcome! Roadmap includes:
 
 * Real-time health panel
-
 
 ---
 
