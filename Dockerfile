@@ -11,6 +11,7 @@ COPY app/static /app/static
 RUN pip install --no-cache-dir -r requirements.txt
 RUN apt-get update && apt-get install -y curl && rm -rf /var/lib/apt/lists/*
 RUN pip install --upgrade setuptools
+RUN pip install --no-cache-dir setuptools==68.2.2
 
 # Set PYTHONPATH (optional but helpful)
 ENV PYTHONPATH=/app
