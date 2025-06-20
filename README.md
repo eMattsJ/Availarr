@@ -162,25 +162,10 @@ Docker Hub: [https://hub.docker.com/r/ematts/availarr](https://hub.docker.com/r/
 
 ## 📝 Changelog Summary
 
-### New Features
+## 📓 Changelog
 
-* 🔐 **Secure login flow** introduced:
+See [CHANGELOG.md](./CHANGELOG.md) for full release history.
 
-  * First-time login uses default credentials: `admin` / `admin`
-  * Prompted to create your own username and password immediately
-
-### Enhancements
-
-* 📘 **README improvements**:
-
-  * 🔸 Emphasized Overseerr Auto-Approve requirement at the top of prerequisites
-  * 🔸 Clarified Docker deployment instructions
-  * 🔸 Added a security reminder to change the default login credentials
-  * 🖼️ Embedded and resized a logo for better visual balance
-
-### Fixes
-
-* ✅ Reorganized content for readability and emphasis
 
 ---
 
