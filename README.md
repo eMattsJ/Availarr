@@ -1,4 +1,5 @@
-![Docker Pulls](https://img.shields.io/docker/pulls/ematts/availarr) ![GitHub last commit](https://img.shields.io/github/last-commit/emattsJ/availarr) <img src="https://github.com/user-attachments/assets/caec3275-6d80-4823-8ffc-bdbb5d49504a" alt="availarr logo" width="100" style="vertical-align: middle; margin-left: 12px;"/>
+![Docker Pulls](https://img.shields.io/docker/pulls/ematts/availarr) ![GitHub last commit](https://img.shields.io/github/last-commit/emattsJ/availarr) 
+<img src="https://github.com/user-attachments/assets/caec3275-6d80-4823-8ffc-bdbb5d49504a" alt="availarr logo" width="100" style="vertical-align: middle; margin-left: 12px;"/>
 
 # 🤖 Availarr: The Ultimate Streaming Request Gatekeeper
 
