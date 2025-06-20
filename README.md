@@ -139,9 +139,8 @@ flowchart TD
 
 Pull requests welcome! Roadmap includes:
 
-* Dark mode toggle
 * Real-time health panel
-* Watchtower auto-update integration
+
 
 ---
 
